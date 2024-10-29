@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.active {
+    @apply bg-white text-primary; 
+} 
+
+.nav-item {
+    @apply p-2 rounded-md;
+}
+
+.text-stroke {
+    -webkit-text-stroke: 1px black;
+    fill: none;
+}
