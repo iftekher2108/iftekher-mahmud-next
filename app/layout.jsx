@@ -1,9 +1,8 @@
 "use client"
-import '../lib/fontawesome'
-import '@/styles/globals.css'
-import Navbar from '../components/Navbar';
 // import { usePathname } from "next/navigation";
-
+import Navbar from '../components/Navbar';
+import "@/plugins/fontawesome/css/all.min.css"
+import '@/styles/globals.css'
 
 export default function RootLayout({ children }) {
   // const pathname = usePathname();
