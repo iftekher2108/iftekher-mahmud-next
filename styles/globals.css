@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  @apply bg-white !text-black;
+}
+
+.nav-item {
+  @apply py-3 px-4 rounded-full text-white;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px black;
+  fill: none;
+}
+
+.section-title {
+  @apply relative before:bg-primary before:w-full  before:absolute before:top-[50%] before:h-1 before:left-full after:bg-primary after:w-full  after:absolute after:top-[50%] after:h-1 after:right-full;
+}
