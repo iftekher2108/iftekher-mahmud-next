@@ -1,13 +1,13 @@
+import Projects from "@/components/Projects";
 
-
-function Project() {
-    return(
-        <>
-        <h1>
-            project
-        </h1>
-        </>
-    )
+function ProjectPage() {
+    return (
+        <main className=" mx-auto py-16 px-4">
+            <Projects showFilter={true} />
+        </main>
+    );
 }
 
-export default Project
+export default ProjectPage;
+
+

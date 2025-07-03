@@ -1,30 +1,31 @@
 "use client"
-// import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
+import { AnimatePresence, motion } from "framer-motion";
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import "@/plugins/fontawesome/css/all.min.css"
 import '@/styles/globals.css'
 
 export default function RootLayout({ children }) {
-  // const pathname = usePathname();
+  const pathname = usePathname();
   return (
-    <html lang="en">
+    <html lang="en" data-theme='light'>
       <body>
-        <div className="overflow-hidden">
-          
-          <div
-          // key={pathname}
-          // initial={{y: 500, opacity: 0 }}
-          // animate={{y: 0, opacity: 1}}
-          // exit={{y: 500, opacity: 0}}
-          // transition={{ 
-          //   type:'spring',
-          //   damping:15,
-          //   stiffness:120
-          // }}
-          >
-            {children}
-            <Navbar/>
-          </div>  
+  <div className="overflow-hidden bg-gradient-to-br from-primary via-secondary to-accent dark:from-base-200 dark:via-base-300 dark:to-base-100 transition-colors duration-700">
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={pathname}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -100 }}
+              transition={{ type: 'spring', damping: 20, stiffness: 100, duration: 0.5 }}
+              className=""
+            >
+              {children}
+              <Navbar/>
+              <Footer/>
+            </motion.div>
+          </AnimatePresence>
         </div>
       </body>
     </html>

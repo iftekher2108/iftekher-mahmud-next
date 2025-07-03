@@ -5,7 +5,7 @@ import IconSocial from "@/components/iconSocial"
 function About() {
     return(
         <>
-        <div className="lg:p-7 p-4">
+        <div className="p-4">
         <div className="grid lg:grid-cols-2 gap-3 items-center justify-between">
           
           <div>
