@@ -4,8 +4,14 @@ import { motion } from 'framer-motion';
 
 const educationData = [
   {
-    degree: 'B.Sc. in Computer Science',
-    institution: 'Your University',
+    degree: 'Diploma in Computer Technology',
+    institution: 'Kustia Polytechnic Institute',
+    year: '2019 - 2023',
+    details: 'Graduated with honors, specialized in web development and Application development.'
+  },
+  {
+    degree: 'Secondary School Certificate (SSc)',
+    institution: 'Bheramara Pilot High School',
     year: '2020 - 2024',
     details: 'Graduated with honors, specialized in web development and UI/UX.'
   },

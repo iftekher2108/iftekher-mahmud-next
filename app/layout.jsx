@@ -1,9 +1,9 @@
 "use client"
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import "@/plugins/fontawesome/css/all.min.css"
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import "@fortawesome/fontawesome-free/css/all.min.css"
 import '@/styles/globals.css'
 
 export default function RootLayout({ children }) {
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -100 }}
               transition={{ type: 'spring', damping: 20, stiffness: 100, duration: 0.5 }}
-              className=""
+              className="lg:m-10 md:m-4 sm:m-2"
             >
               {children}
               <Navbar/>
