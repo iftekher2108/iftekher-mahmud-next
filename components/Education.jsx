@@ -20,8 +20,14 @@ const educationData = [
 
 export default function Education() {
   return (
-    <section id="education" className="py-12 px-4 m-3 bg-base-100 rounded-2xl shadow-xl mb-8">
-      <motion.h2 initial={{opacity:0, y:40}} animate={{opacity:1, y:0}} transition={{duration:0.6}} className="text-3xl font-bold mb-8 text-primary">Education</motion.h2>
+    <div id="education" className="card md:p-6 p-2 mb-2 bg-base-100 shadow-xl">
+      <div className="flex items-center justify-center mb-8 pt-10 relative z-10">
+        <motion.span initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
+          className="text-center px-6 uppercase text-3xl font-bold section-title text-primary">
+          Education
+        </motion.span>
+      </div>
+
       <div className="grid md:grid-cols-2 gap-6">
         {educationData.map((edu, idx) => (
           <motion.div key={idx} initial={{opacity:0, x:-40}} animate={{opacity:1, x:0}} transition={{delay:idx*0.2}} className="card bg-base-200 shadow-lg">
@@ -36,6 +42,6 @@ export default function Education() {
           </motion.div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
