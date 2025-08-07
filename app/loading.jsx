@@ -1,7 +1,7 @@
 export default function Loading() {
     return(
         <>
-        <span class="loading loading-infinity loading-xl"></span>
+        <span className="loading loading-infinity text-black loading-xl"></span>
         </>
     )
 }

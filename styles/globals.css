@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
 @plugin "daisyui"{
- themes: light --default, dark --prefersdark, cupcake;
+ themes:light, dark, cupcake, retro, bumblebee, emerald, corporate, synthwave, cyberpunk, 
+ valentine, halloween, garden, forest, aqua, lofi, pastel, fantasy, wireframe, black, luxury, dracula,
+  cmyk, autumn, business, acid, lemonade, night, coffee, winter, dim, nord, sunset, caramellatte,
+   abyss, silk;
 }
 
 @plugin "daisyui/theme" {
@@ -82,7 +85,7 @@
 }
 
 .text-stroke {
-  -webkit-text-stroke: 1px var(--color-primary);
+  -webkit-text-stroke: 2px var(--color-primary);
   fill: none;
 }
 
