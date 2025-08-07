@@ -59,7 +59,7 @@ export default function Projects({ showFilter = true }) {
         {filteredProjects.map((project, idx) => (
           <motion.div key={idx} initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: idx * 0.2 }} className="card bg-base-200 transition-all border hover:-translate-y-1.5 border-primary overflow-hidden duration-300 shadow-lg hover:shadow-xl ">
             <div className="flex justify-center items-center p-3 w-full">
-              <Image src={project.picture.trim() !== '' ? project.picture : '/avater.png'} height={400} width={400} className='object-cover rounded-lg' alt={project.title} />
+              <Image src={project.picture.trim() !== '' ? project.picture : '/avater.png'} height={400} width={400} className='object-cover grow rounded-lg' alt={project.title} />
             </div>
             <div className="card-body">
               <h3 className="card-title text-primary mb-2">{project.title}</h3>
