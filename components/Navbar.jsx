@@ -1,24 +1,9 @@
 'use client'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
 
 function Navbar() {
   const pathName = usePathname();
-  const [theme, setTheme] = useState('light');
-
-  console.log(pathName)
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      document.documentElement.setAttribute('data-theme', theme);
-    }
-  }, [theme]);
-
-  // const toggleTheme = () => {
-  //   setTheme(theme === 'light' ? 'dark' : 'light');
-  // };
-
   return (
     <div className="fixed z-[300] p-2 bg-base-200 border border-base-300 shadow-xl rounded-full bottom-7 left-1/2 -translate-x-1/2">
       <div className="flex gap-2 items-center">

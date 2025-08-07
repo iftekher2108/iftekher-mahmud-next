@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @plugin "daisyui"{
- themes:light, dark, cupcake, retro, bumblebee, emerald, corporate, synthwave, cyberpunk, 
+ themes: light, dark, cupcake, retro, bumblebee, emerald, corporate, synthwave, cyberpunk, 
  valentine, halloween, garden, forest, aqua, lofi, pastel, fantasy, wireframe, black, luxury, dracula,
   cmyk, autumn, business, acid, lemonade, night, coffee, winter, dim, nord, sunset, caramellatte,
    abyss, silk;
@@ -9,6 +9,7 @@
 
 @plugin "daisyui/theme" {
   name: "default";
+  default: true;
   color-scheme: "light";
   --color-base-100: oklch(27% 0.041 260.031);
   --color-base-200: oklch(20% 0.042 265.755);
@@ -43,7 +44,7 @@
 
 
 @plugin "daisyui/theme" {
-  name: "mylight";
+  name: "domlight";
   color-scheme: "light";
   --color-base-100: oklch(98% 0.001 106.423);
   --color-base-200: oklch(97% 0.001 106.424);

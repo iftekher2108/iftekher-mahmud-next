@@ -23,8 +23,10 @@ const projects = [
   },
   {
     title: 'WordPress Blog',
+    picture:"",
     description: 'A custom blog theme for WordPress.',
     technologies: ['WordPress', 'PHP', 'SCSS'],
+    git_link:'',
     link: '#'
   },
   // Add more projects as needed
@@ -56,8 +58,8 @@ export default function Projects({ showFilter = true }) {
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3">
         {filteredProjects.map((project, idx) => (
           <motion.div key={idx} initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: idx * 0.2 }} className="card bg-base-200 transition-all border hover:-translate-y-1.5 border-primary overflow-hidden duration-300 shadow-lg hover:shadow-xl ">
-            <div className='flex justify-center items-center p-3 w-full'>
-              <Image src={project.picture} height={400} width={400} className='object-cover rounded-lg ' alt={project.title} />
+            <div className="flex justify-center items-center p-3 w-full">
+              <Image src={project.picture.trim() !== '' ? project.picture : '/avater.png'} height={400} width={400} className='object-cover rounded-lg' alt={project.title} />
             </div>
             <div className="card-body">
               <h3 className="card-title text-primary mb-2">{project.title}</h3>
