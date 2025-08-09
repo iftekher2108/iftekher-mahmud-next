@@ -1,8 +1,7 @@
 'use client'
 import Link from "next/link"
-import { useState, useEffect } from "react";
 
-export default function NavMenu() {
+export default function NavMenu({ theme, setTheme }) {
     const themeList = [
         "default", "domlight", "light", "dark", "cupcake", "retro", "bumblebee", "emerald", "corporate", "synthwave", "cyberpunk",
         "valentine", "halloween", "garden", "forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black", "luxury", "dracula",
@@ -10,13 +9,6 @@ export default function NavMenu() {
         "abyss", "silk"
     ];
 
-    const [theme, setTheme] = useState('default');
-
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            document.documentElement.setAttribute('data-theme', theme);
-        }
-    }, [theme]);
     return (
         <div className="sticky z-50 top-0">
             <div className="navbar bg-base-100 shadow-sm relative px-6">
@@ -37,14 +29,17 @@ export default function NavMenu() {
                         </svg>
                     </div>
                     <ul tabIndex={0} className="dropdown-content bg-base-300 flex flex-col gap-1 rounded-box overflow-y-scroll h-[50vh] z-1 w-28 p-2 shadow-xl">
-                        {themeList.map((theme,index) => (
+                        {themeList.map((item,index) => (
                             <li key={index}>
                                 <input
                                     type="radio"
                                     name="theme-dropdown"
                                     className="theme-controller w-full btn btn-sm justify-start"
-                                    aria-label={theme.charAt(0).toUpperCase() + theme.slice(1)}
-                                    value={theme} />
+                                    aria-label={item.charAt(0).toUpperCase() + item.slice(1)}
+                                    value={item}
+                                    checked={theme === item}
+                                    onChange={(e) => setTheme(e.target.value)}
+                                     />
                             </li>
                         ))}
                     </ul>

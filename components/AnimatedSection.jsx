@@ -1,7 +1,6 @@
 'use client'
 import React from 'react';
 import { motion } from 'framer-motion';
-import { usePathname } from 'next/navigation';
 
 export default function AnimatedSection({ children, delay = 0 }) {
   return (

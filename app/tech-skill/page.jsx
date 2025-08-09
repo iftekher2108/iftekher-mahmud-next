@@ -1,8 +1,12 @@
-
+import AnimatedSection from "@/components/AnimatedSection"
+import Skills from "@/components/Skills"
 function TechSkill() {
-    return(
+    return (
         <>
-        <h1>tech skill</h1>
+            {/* Tech Skills Section */}
+            <AnimatedSection delay={0.4}>
+                <Skills />
+            </AnimatedSection>
         </>
     )
 }
