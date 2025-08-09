@@ -66,12 +66,12 @@ export default function Projects({ showFilter = true }) {
               <p className="text-base-content/100 mb-2">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-2">
                 {project.technologies.map(tech => (
-                  <span key={tech} className="badge badge-secondary shadow text-xs font-medium">{tech}</span>
+                  <span key={tech} className="badge badge-outline badge-secondary  shadow text-xs font-medium hover:scale-105 transition-all duration-300 ease-in-out">{tech}</span>
                 ))}
               </div>
               <div className='flex gap-3 py-3 px-10'>
-                {project.git_link && <Link href={project.git_link} target='_blank' className="btn btn-sm grow btn-accent btn-outline">Github</Link>}
-                {project.link && <Link href={project.link} target='_blank' className="btn btn-sm grow btn-success btn-outline">View Project</Link>}
+                {project.git_link && <Link href={project.git_link} target='_blank' className="btn btn-sm grow btn-accent hover:scale-105 btn-outline transition-all duration-300 ease-in-out">Github</Link>}
+                {project.link && <Link href={project.link} target='_blank' className="btn btn-sm grow btn-success hover:scale-105 btn-outline transition-all duration-300 ease-in-out">View Project</Link>}
               </div>
             </div>
           </motion.div>

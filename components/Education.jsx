@@ -40,7 +40,7 @@ export default function Education() {
 
       <div className="grid md:grid-cols-2 gap-6">
         {educationData.map((edu, idx) => (
-          <motion.div key={idx} initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: idx * 0.2 }} className="card bg-base-200 shadow-lg">
+          <motion.div key={idx} initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} whileHover={{ scale: 1.02 }} transition={{ type:'spring', damping:15, stiffness: 200, delay:idx*0.2 }} className="card bg-base-200 hover:ring-1 ring-primary shadow-lg">
             <div className="card-body">
               <h3 className="card-title text-xl text-secondary">{edu.degree}</h3>
               <div className="flex items-center justify-between gap-2 mb-1">

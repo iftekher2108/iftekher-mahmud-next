@@ -9,12 +9,18 @@ const workData = [
     year: '2024 - Present',
     details: 'Building modern web applications with React and Next.js.'
   },
+  {
+    title: 'Frontend Developer',
+    company: 'Tech Company',
+    year: '2024 - Present',
+    details: 'Building modern web applications with React and Next.js.'
+  },
   // Add more work items as needed
 ];
 
 export default function Work() {
   return (
-    <section id="work" className="py-12 px-4 m-3 bg-base-100 rounded-2xl shadow-xl mb-8">
+    <div id="work" className="card md:p-6 p-2 mb-2 bg-base-100 shadow-xl">
       <motion.h2 initial={{opacity:0, y:40}} animate={{opacity:1, y:0}} transition={{duration:0.6}} className="text-3xl font-bold mb-8 text-primary">Work</motion.h2>
       <div className="grid md:grid-cols-2 gap-6">
         {workData.map((work, idx) => (
@@ -30,6 +36,6 @@ export default function Work() {
           </motion.div>
         ))}
       </div>
-    </section>
+    </div>
   );
 }
