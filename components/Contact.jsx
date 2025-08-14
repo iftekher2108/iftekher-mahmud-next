@@ -71,8 +71,8 @@ export default function Contact() {
                                         </span>
                                     </div>
                                     <h1 className="text-4xl font-extrabold mb-2 text-primary text-center">Contact Us</h1>
-                                    <h2 className="text-lg text-base-content/80 text-center mb-2 font-medium">We'd love to hear from you!</h2>
-                                    <p className="text-base text-base-content/70 text-center max-w-md mb-2">Fill out the form below and we'll get back to you as soon as possible. Whether you have a question, project idea, or just want to say hello, our inbox is always open.</p>
+                                    <h2 className="text-lg text-base-content/80 text-center mb-2 font-medium">We love to hear from you!</h2>
+                                    <p className="text-base text-base-content/70 text-center max-w-md mb-2">Fill out the form below and we will get back to you as soon as possible. Whether you have a question, project idea, or just want to say hello, our inbox is always open.</p>
                                 </div>
                                 <form action={'https://formspree.io/f/mqkoqqjw'} method="post" className="flex flex-col gap-4 mt-4">
                                     <div className="form-control">
