@@ -12,29 +12,86 @@ export default function Projects({ showFilter = true, limit }) {
     {
       title: 'Material Calculation Software',
       picture: '/projects/material-calculation-software.jpg',
-      description: 'A creative portfolio built with Next.js and Tailwind CSS and Daisy UI .',
+      description: 'Matel Calculation is a simple online tool to quickly find the weight of metal shapes like round bars, tubes, sheets, and more. Enter your dimensions, choose the shape, and get results instantly. Designed by Iftekher Mahmud for fast, accurate, and hassle-free metal weight calculations.',
       technologies: ['React.js', 'Next.js', 'Tailwind CSS', 'Daisy UI'],
       git_link: '',
       link: 'https://matel-calculation-next.vercel.app'
     },
     {
-      title: 'E-commerce Platform',
+      title: 'Image Edit Software',
       picture: '/projects/image-editing-software.jpg',
-      description: 'A scalable Image Editing Software platform using React and Next.js.',
-      technologies: ['React.js', 'Next.js', 'Node.js', 'Tailwind CSS', 'Daisy UI'],
+      description: 'Image Edit Software is a free, easy-to-use online tool for editing photos. You can quickly adjust brightness, contrast, saturation, hue, grayscale, invert, sepia, blur, and more. It also lets you rotate images, reset filters, and save your edits instantly. This tool has a clean interface so anyone can edit images without hassle.',
+      technologies: ['React.js', 'Next.js', 'Tailwind CSS', 'Daisy UI'],
       git_link: '',
       link: 'https://image-edit-software.vercel.app'
     },
     {
-      title: 'WordPress Blog',
-      picture: "",
-      description: 'A custom blog theme for WordPress.',
-      technologies: ['WordPress', 'PHP', 'SCSS'],
+      title: 'Restaurant Website',
+      picture: "/projects/restuarent-Project.jpg",
+      description: 'Restaurant Template is a sleek, responsive website design tailored for food businesses. It features sections like About Us, Menu, Offers, Gallery, and Contact, all crafted with modern aesthetics and user-friendly navigation. Perfect for showcasing your culinary delights online.',
+      technologies: ['HTML', 'CSS', 'SCSS', 'BOOTSTRAP', 'JAVASCRIPT', 'JQUERY'],
       git_link: '',
-      link: '#'
+      link: 'https://iftekher2108.github.io/restaurent-templete'
+    },
+    {
+      title: 'Happiness Website',
+      picture: "/projects/happiness-project.jpg",
+      description: 'Happiness Template is a vibrant, modern consultancy landing page offering sections like How Happy Are You?, Who We Are, Client Relationships, Our Team, and a newsletter. Clean layout, engaging visuals—just explore and connect.',
+      technologies: ['HTML', 'CSS', 'SCSS', 'BOOTSTRAP', 'JAVASCRIPT', 'JQUERY'],
+      git_link: '',
+      link: 'https://iftekher2108.github.io/happiness-template'
+    },
+    {
+      title: 'Pet Consultancy Website',
+      picture: "/projects/pet-consultency-Project-Presentation.jpg",
+      description: 'Pet Consultancy Template is a cozy, modern landing page for pet care services. With sections like Home, About, Services (vet care, dental care, vaccination), team intros, blog posts, and pet adoption promos, it\'s pawsitively perfect for vet businesses.',
+      technologies: ['HTML', 'CSS', 'SCSS', 'BOOTSTRAP', 'JAVASCRIPT', 'JQUERY', 'PLUGINS'],
+      git_link: '',
+      link: 'https://iftekher2108.github.io/pet-consultency-templete'
+    },
+    {
+      title: 'TATA Website Clone',
+      picture: "/projects/tata-web-clone.png",
+      description: 'This is a front-end clone of the official Tata website recreated. The goal was to replicate Tata’s clean, corporate design with responsive layouts, smooth navigation, and accurate section structure, including Business, Community, Careers, and more. It’s built purely for learning and practice—no official affiliation with Tata.',
+      technologies: ['HTML', 'CSS', 'SCSS', 'BOOTSTRAP', 'JAVASCRIPT', 'JQUERY', 'PLUGINS'],
+      git_link: '',
+      link: 'https://iftekher2108.github.io/tata-web'
+    },
+    {
+      title: 'US Whole Sale Clone',
+      picture: "/projects/us-whole-sale.png",
+      description: 'UK Wholesale Template is a clean, professional B2B e-commerce template. It showcases bulk products across categories like toys, kitchenware, health & beauty, and homeware. Designed for easy customization, it’s perfect for creating a wholesale website with intuitive browsing, product listings, and pricing layouts.',
+      technologies: ['HTML', 'CSS', 'SCSS', 'BOOTSTRAP', 'JAVASCRIPT', 'JQUERY', 'PLUGINS'],
+      git_link: '',
+      link: 'https://iftekher2108.github.io/uk-whole-sale'
+    },
+    {
+      title: 'Currency Converter',
+      picture: "/projects/currency-converter.jpg",
+      description: 'Currency Converter is a sleek, responsive web app that lets you instantly convert over 100 currencies. With a clean interface and real-time exchange rates, it\'s perfect for travelers, freelancers, or anyone needing quick, accurate conversions.',
+      technologies: ['HTML', 'CSS', 'BOOTSTRAP', 'JAVASCRIPT', 'Axios', 'JQUERY', 'PLUGINS'],
+      git_link: '',
+      link: 'https://iftekher2108.github.io/currency-converter'
+    },
+    {
+      title: 'Simple Calculator',
+      picture: "/projects/calculator-Project-Presentation.png",
+      description: 'Calculator Project is a sleek, responsive web calculator built with HTML, CSS, and JavaScript. It features all the essentials—addition, subtraction, multiplication, division, percentage, and clear/reset functions. Designed for both desktop and mobile use, it\'s a clean and functional tool for everyday calculations.',
+      technologies: ['HTML', 'CSS', 'JAVASCRIPT'],
+      git_link: '',
+      link: 'https://iftekher2108.github.io/calculator-project'
+    },
+    {
+      title: 'Vue Currency Coverter',
+      picture: "/projects/vue-currency-coverter.jpg",
+      description: 'Vue Currency Converter is a sleek, real-time web app built with Vue 3, Vite. It lets you effortlessly convert between multiple currencies With a clean interface and live exchange rates, it\'s perfect for travelers, freelancers, or anyone needing quick, accurate conversions.',
+      technologies: ['HTML', 'CSS', 'BOOTSTRAP', 'JAVASCRIPT', 'Vue JS','Axios'],
+      git_link: '',
+      link: 'https://vue-currency-convert.netlify.app'
     },
     // Add more projects as needed
   ];
+
 
   const allTech = Array.from(new Set(projects.flatMap(p => p.technologies)));
 

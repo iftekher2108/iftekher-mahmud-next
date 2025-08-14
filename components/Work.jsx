@@ -11,14 +11,14 @@ export default function Work() {
       company: 'Innovative Soft',
       year: '2023 - Present',
       location: 'Dhanmondi, Dhaka',
-      details: 'Building modern web applications with React and Next.js.'
+      details: 'Developing modern, high-performance web applications using React, React-native, PHP, Laravel. Focused on building responsive, user-friendly interfaces, optimizing application performance, and implementing scalable front-end architectures. Collaborating closely with designers and backend teams to deliver seamless digital experiences.'
     },
     {
       title: 'Web Developer',
-      company: 'Shyamoli, Dhaka',
+      company: 'Security Automation System',
       year: '2022 - 2023',
-      location: '',
-      details: 'Building modern web applications with React and Next.js.'
+      location: 'Shyamoli, Dhaka',
+      details: 'Designed and developed dynamic websites using WordPress, HTML, CSS, JavaScript, and jQuery. Implemented custom themes, optimized layouts for responsiveness, and integrated various plugins to enhance website functionality and user experience.'
     },
     // Add more work items as needed
   ];
