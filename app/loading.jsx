@@ -1,7 +1,7 @@
 'use client'
 import { useEffect } from "react";
 export default function Loading() {
-      useEffect(() => {
+  useEffect(() => {
     // Simulate async promise
     const fetchData = async () => {
       await new Promise(resolve => setTimeout(resolve, 2000)); // 2s delay
@@ -9,11 +9,11 @@ export default function Loading() {
 
     fetchData();
   }, []);
-    return(
-        <>
-         <div className="w-screen h-screen flex items-center justify-center">
-            <span className="loading loading-infinity size-28 loading-xl"></span>
-         </div>
-        </>
-    )
+  return (
+    <>
+      <div className="w-screen h-screen flex items-center justify-center">
+        <span className="loading loading-infinity size-28 loading-xl"></span>
+      </div>
+    </>
+  )
 }

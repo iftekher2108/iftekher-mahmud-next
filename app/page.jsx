@@ -6,11 +6,12 @@ import Work from "@/components/Work";
 import Hero from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
 import Contact from "@/components/Contact";
-import Head from "next/head";
+import Script from "next/script";
 
-// export const metadata = {
-//   title: "Iftekher Mahmud - Software Engineer"
-// }
+export const metadata = {
+  title: "Iftekher Mahmud - Software Engineer",
+  description: "Iftekher Mahmud is a Skilled Software Engineer, specialized in PHP/Laravel, React-native, WordPress, Customized App delivering innovative solutions."
+}
 
 export default function Home() {
 
@@ -28,22 +29,15 @@ export default function Home() {
   };
 
 
-
-
   return (
     <>
 
-      <Head>
-        <title>Iftekher Mahmud — Software Engineer</title>
-        <meta
-          name="description"
-          content="Iftekher Mahmud is a Skilled Software Engineer, specialized in PHP/Laravel, React-native, WordPress, Customized App delivering innovative solutions."
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </Head>
+      <Script
+        id="person-jsonld"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
 
       {/* Hero Section */}
       <AnimatedSection>
