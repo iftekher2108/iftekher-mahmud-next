@@ -6,6 +6,7 @@ import '@/styles/globals.css'
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Head from "next/head";
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import NavMenu from "@/components/NavMenu";
@@ -13,7 +14,7 @@ import NavMenu from "@/components/NavMenu";
 
 export default function RootLayout({ children }) {
 
-  
+
     const [theme, setTheme] = useState('default');
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -37,8 +38,11 @@ export default function RootLayout({ children }) {
 
     const pathname = usePathname();
 
-  return (
-       <html lang="en" data-theme={theme}>
+    return (
+        <html lang="en" data-theme={theme}>
+            <Head>
+                <meta name="google-site-verification" content="vH8uqfESeja1JBoA_O5uVlC0MunYPlnMRFpR3ZFhZEg" />
+            </Head>
             <body>
                 <NavMenu theme={theme} setTheme={setTheme} />
                 <div className="overflow-hidden bg-gradient-to-br from-primary via-secondary to-accent dark:from-base-200 dark:via-base-300 dark:to-base-100 transition-colors duration-700">
@@ -59,5 +63,5 @@ export default function RootLayout({ children }) {
                 </div>
             </body>
         </html>
-  );
+    );
 }
