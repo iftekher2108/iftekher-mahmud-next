@@ -7,7 +7,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import NavMenu from "@/components/NavMenu";
 
-export default function Template({children}) {
+export default function Template({ children }) {
 
     const [theme, setTheme] = useState('default');
     useEffect(() => {
@@ -52,6 +52,7 @@ export default function Template({children}) {
                     <Navbar />
                     <Footer />
                 </div>
+
             </body>
         </html>
     )

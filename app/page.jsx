@@ -20,7 +20,7 @@ export default function Home() {
     "@type": "Person",
     "name": "Iftekher Mahmud Pervez",
     "jobTitle": "Software Engineer",
-    "url": "https://iftekher-mahmud.vercel.app",
+    "url": "https://iftekher.libehede.com",
     "sameAs": [
       "https://www.linkedin.com/in/iftekhermahmud1",
       "https://github.com/iftekher2108"

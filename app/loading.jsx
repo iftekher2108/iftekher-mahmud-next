@@ -4,7 +4,7 @@ export default function Loading() {
   useEffect(() => {
     // Simulate async promise
     const fetchData = async () => {
-      await new Promise(resolve => setTimeout(resolve, 2000)); // 2s delay
+      await new Promise(resolve => setTimeout(resolve, 1000)); // 1s delay
     };
 
     fetchData();

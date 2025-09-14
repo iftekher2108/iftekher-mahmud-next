@@ -5,7 +5,7 @@ export const metadata = {
     title: 'Iftekher Mahmud — Software Engineer',
     description: 'Iftekher Mahmud is a Skilled Software Engineer, specialized in PHP/Laravel, React-native, WordPress, Customized App delivering innovative solutions.',
     verification: {
-        google: "vH8uqfESeja1JBoA_O5uVlC0MunYPlnMRFpR3ZFhZEg",
+        google: "wE7hVntg2J7RHGyHuqe7Jq8P2ZlySSE38xmMQegyGHM"
     }
 }
 
