@@ -15,7 +15,7 @@ export default function AboutMe() {
             <div className="flex justify-center">
               <div className="avatar">
                 <div className="w-72 h-72 rounded-full shadow-xl ring-4 ring-primary ring-offset-base-100 ring-offset-4 flex items-center justify-center">
-                  <Image src={'/avater.png'} height={500} width={500} alt="about-avatar" className="object-cover" />
+                  <Image src={'/about.png'} height={500} width={500} alt="about-avatar" className="object-cover" />
                 </div>
               </div>
             </div>

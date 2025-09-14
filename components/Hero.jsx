@@ -25,8 +25,8 @@ export default function Hero() {
                     <IconSocial />
                 </div>
                 <div className="flex justify-center p-3">
-                    <div className="avatar rounded-tl-[50%] rounded-br-[50%] ring-4 ring-offset-base-100 border ring-offset-4 shadow-xl flex items-center justify-center ring-primary ">
-                        <Image src={'/avater.png'} height={400} width={400} alt="hero-avater" className="object-cover" />
+                    <div className="avatar rounded-tl-[50%] overflow-hidden rounded-br-[50%] ring-4 ring-offset-base-100 border ring-offset-4 shadow-xl flex items-center justify-center ring-primary ">
+                        <Image src={'/hero.jpg'} height={400} width={400} alt="hero-avater" className="object-cover" />
                     </div>
                 </div>
             </div>
