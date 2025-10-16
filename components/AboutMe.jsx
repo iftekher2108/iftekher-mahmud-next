@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 export default function AboutMe() {
     return(
-       <div className="relative md:p-6 p-2 mb-2 card rounded-5 shadow-md bg-base-100 border border-base-200 overflow-hidden">
+       <div className="relative md:p-6 py-10 p-2 mb-2 card rounded-5 shadow-md bg-base-100 border border-base-200 overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute -top-12 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-2xl"></div>
             <div className="absolute bottom-0 left-0 w-56 h-56 bg-accent/10 rounded-full blur-2xl"></div>
@@ -11,7 +11,7 @@ export default function AboutMe() {
           <div className="flex items-center justify-center mb-8 pt-10 relative z-10">
             <span className="text-center px-6 uppercase text-3xl font-bold section-title text-primary">About Me</span>
           </div>
-          <div className="relative grid lg:grid-cols-2 gap-12 items-center z-10">
+          <div className="relative grid lg:grid-cols-2 gap-12 items-center z-10 mb-6">
             <div className="flex justify-center">
               <div className="avatar">
                 <div className="w-72 h-72 rounded-full shadow-xl ring-4 ring-primary ring-offset-base-100 ring-offset-4 flex items-center justify-center">
