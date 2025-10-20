@@ -17,7 +17,7 @@ export default function Hero() {
                         <br />
                         <span className="text-2xl font-bold block mt-2 text-error tracking-tight">Software Engineer</span>
                     </h1>
-                    <p className="lg:w-3/4 mb-8 text-lg text-base-content/80 leading-relaxed">I craft <span className="font-semibold text-primary">beautiful</span>, <span className="font-semibold text-secondary">animated</span>, and <span className="font-semibold text-success">content-rich</span> web experiences with Next.js, React, and Tailwind CSS. Let&#39;s create something amazing together!</p>
+                    <p className="lg:w-3/4 mb-8 text-lg text-base-content/80 leading-relaxed">I craft <span className="font-semibold text-primary">beautiful</span>, <span className="font-semibold text-secondary">animated</span>, and <span className="font-semibold text-success">content-rich</span> web experiences with various type of technologies. Let&#39;s create something amazing together!</p>
                     <div className="flex gap-4 mb-6">
                         <Link href={'/contact'} className="btn btn-primary px-10  hover:scale-105 transition-transform font-bold">Hire Me</Link>
                         <a href={'/iftekher_mahmud.pdf'} className="btn btn-info px-10 hover:scale-105 transition-transform font-bold">Get Resume</a>

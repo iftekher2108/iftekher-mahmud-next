@@ -11,14 +11,14 @@ export default function Skills() {
 
   return (
     <div id="skills" className="card md:p-6 p-2 mb-2 bg-base-100 shadow-xl">
-      <div className="flex items-center justify-center mb-8 pt-10 relative z-10">
+      <div className="mb-10 pt-4 relative z-10">
         <motion.span initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
-          className="text-center px-6 uppercase text-3xl font-bold section-title text-primary">
+          className="glass rounded-t  px-6 py-3 capitalize text-3xl font-bold section-title bg-primary">
           Skills
         </motion.span>
       </div>
 
-      <h3 className=' border-primary border-s border-b-4 font-bold uppercase text-xl border-e text-center rounded-md p-3 mb-4'> Front - End </h3>
+      <h3 className='glass border-primary border-s border-b-4 font-bold uppercase text-xl border-e text-center rounded-md p-3 mb-4'> Front - End </h3>
       <ul className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 flex-wrap gap-3 justify-center mb-6">
         {front_end.map((frontend, idx) => (
           <li key={idx}
@@ -41,7 +41,7 @@ export default function Skills() {
       </div> */}
 
 
-      <h3 className=' border-primary border-s border-b-4 font-bold uppercase text-xl border-e text-center rounded-md p-3 mb-4'> Back - End </h3>
+      <h3 className='glass border-primary border-s border-b-4 font-bold uppercase text-xl border-e text-center rounded-md p-3 mb-4'> Back - End </h3>
       <ul className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 flex-wrap gap-3 justify-center mb-6">
         {back_end.map((backend, idx) => (
           <li key={idx}
@@ -63,7 +63,7 @@ export default function Skills() {
         <hr className='text-primary border-2 rounded' />
       </div> */}
 
-      <h3 className=' border-primary border-s border-b-4 font-bold uppercase text-xl border-e text-center rounded-md p-3 mb-4'> Tools </h3>
+      <h3 className='glass border-primary border-s border-b-4 font-bold uppercase text-xl border-e text-center rounded-md p-3 mb-4'> Tools </h3>
       <ul className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 flex-wrap gap-3 justify-center mb-6">
         {tools.map((tool, idx) => (
           <li key={idx}

@@ -7,9 +7,9 @@ export default function Education() {
 
   return (
     <div id="education" className="card md:p-6 p-2 mb-2 bg-base-100 shadow-xl">
-      <div className="flex items-center justify-center mb-8 pt-10 relative z-10">
+      <div className="mb-10 pt-3 relative z-10">
         <motion.span initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
-          className="text-center px-6 uppercase text-3xl font-bold section-title text-primary">
+          className="glass rounded-t px-6 py-3 capitalize text-3xl font-bold section-title bg-primary">
           Education
         </motion.span>
       </div>

@@ -18,9 +18,9 @@ export default function Projects({ showFilter = true, limit }) {
 
   return (
     <div id="projects" className="card md:p-6 p-2 mb-2 bg-base-100 shadow-xl">
-      <div className="flex items-center justify-center mb-8 pt-10 relative z-10">
+      <div className="mb-12 pt-3 relative z-10">
         <motion.span initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
-          className="text-center px-6 uppercase text-3xl font-bold section-title text-primary">
+          className="glass rounded-t px-6 py-4 capitalize text-3xl font-bold section-title bg-primary">
           Projects
         </motion.span>
       </div>

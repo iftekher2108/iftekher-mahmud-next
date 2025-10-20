@@ -36,7 +36,7 @@ export default function Template({ children }) {
         <html lang="en" data-theme={theme}>
             <body>
                 <NavMenu theme={theme} setTheme={setTheme} />
-                <div className="overflow-hidden bg-gradient-to-br from-primary via-secondary to-accent dark:from-base-200 dark:via-base-300 dark:to-base-100 transition-colors duration-700">
+                <div className="overflow-hidden bg-gradient-to-br from-base-200 via-base-300 to-base-100 transition-colors duration-700">
                     <AnimatePresence mode="popLayout">
                         <motion.div
                             key={pathname}

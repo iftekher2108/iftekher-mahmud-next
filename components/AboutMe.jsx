@@ -8,8 +8,8 @@ export default function AboutMe() {
             <div className="absolute -top-12 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-2xl"></div>
             <div className="absolute bottom-0 left-0 w-56 h-56 bg-accent/10 rounded-full blur-2xl"></div>
           </div>
-          <div className="flex items-center justify-center mb-8 pt-10 relative z-10">
-            <span className="text-center px-6 uppercase text-3xl font-bold section-title text-primary">About Me</span>
+          <div className="mb-16 pt-3 relative z-10">
+            <span className="glass rounded-t px-6 py-3 capitalize text-3xl font-bold section-title bg-primary">About Me</span>
           </div>
           <div className="relative grid lg:grid-cols-2 gap-12 items-center z-10 mb-6">
             <div className="flex justify-center">
@@ -23,7 +23,7 @@ export default function AboutMe() {
               <h2 className="text-4xl font-extrabold mb-4 text-info">Passionate Developer</h2>
               <p className="mb-6 text-lg text-base-content/80 leading-relaxed">With a background in <span className="font-semibold text-info">Computer Tech</span> and a love for <span className="font-semibold text-accent">creative design</span>, I specialize in building <span className="font-semibold text-primary">unique</span>, <span className="font-semibold text-secondary">animated</span>, and <span className="font-semibold text-success">content-rich</span> websites. My mission is to deliver visually stunning and highly functional digital experiences.</p>
               <div className="flex gap-4 mb-6">
-                <Link href={'/contact'} className="btn btn-accent  px-10 hover:scale-105 transition-transform font-bold">Let&#39;s Talk</Link>
+                <Link href={'/contact'} className="btn glass bg-accent  px-10 hover:scale-105 transition-transform font-bold">Let&#39;s Talk</Link>
                 <Link href='/iftekher_mahmud.pdf' className="btn btn-outline  px-10 hover:scale-105 transition-transform font-bold">Download CV</Link>
               </div>
               <IconSocial />

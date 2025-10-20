@@ -10,9 +10,9 @@ export default function Contact() {
             <div className="relative mx-auto my-8 md:my-10 px-2 md:px-0">
                 {/* Subtle gradient background for section, matching project style */}
 
-                <div className="flex items-center justify-center mb-8 pt-10 relative z-10">
+                <div className="mb-10 pt-3 relative z-10">
                     <motion.span initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
-                        className="text-center px-6 uppercase text-3xl font-bold section-title text-primary">
+                        className="glass rounded-t px-6 py-3 capitalize text-3xl font-bold section-title bg-primary">
                         Contact
                     </motion.span>
                 </div>
@@ -75,25 +75,22 @@ export default function Contact() {
                                     <p className="text-base text-base-content/70 text-center max-w-md mb-2">Fill out the form below and we will get back to you as soon as possible. Whether you have a question, project idea, or just want to say hello, our inbox is always open.</p>
                                 </div>
                                 <form action={'https://formspree.io/f/mqkoqqjw'} method="post" className="flex flex-col gap-4 mt-4">
-                                    <div className="form-control">
-                                        <label className="label">
-                                            <span className="label-text text-base font-semibold mb-1">Name</span>
+                                        <label className="floating-label">
+                                            <span className="text-base font-semibold">Name</span>
+                                            <input type="text" placeholder="Name" className="input input-bordered input-lg focus:input-primary focus:outline-0  w-full" required />
                                         </label>
-                                        <input type="text" placeholder="Your Name" className="input input-bordered input-primary focus:outline-0  w-full" required />
-                                    </div>
-                                    <div className="form-control">
-                                        <label className="label">
-                                            <span className="label-text text-base font-semibold mb-1">Email</span>
+
+                                        <label className="floating-label">
+                                            <span className="text-base font-semibold">Email</span>
+                                        <input type="email" placeholder="you@email.com" className="input input-bordered input-lg focus:input-primary focus:outline-0 w-full" required />
                                         </label>
-                                        <input type="email" placeholder="you@email.com" className="input input-bordered input-primary focus:outline-0 w-full" required />
-                                    </div>
-                                    <div className="form-control">
-                                        <label className="label">
-                                            <span className="label-text text-base font-semibold mb-1">Message</span>
+
+                                        <label className="floating-label">
+                                            <span className="text-base font-semibold">Message...</span>
+                                        <textarea className="textarea textarea-lg focus:textarea-primary focus:outline-0 w-full min-h-[150px]" placeholder="message..." required></textarea>
                                         </label>
-                                        <textarea className="textarea textarea-primary focus:outline-0 w-full min-h-[150px]" placeholder="Type your message..." required></textarea>
-                                    </div>
-                                    <button type="submit" className="btn btn-primary mt-2 w-full text-md tracking-[2px] font-bold shadow-md hover:scale-105 transition-transform">Send Message</button>
+
+                                    <button type="submit" className="btn btn-primary btn-lg w-full text-md tracking-[2px] font-bold shadow-md scale-95 hover:scale-100 transition-transform">Send Message</button>
                                 </form>
                             </div>
                         </div>
