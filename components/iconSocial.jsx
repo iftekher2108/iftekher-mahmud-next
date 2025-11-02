@@ -5,13 +5,13 @@ function IconSocial() {
     return (
         <>
             <div className="flex gap-4">
-                <Link href={'https://www.facebook.com/mdiftekher.mahmud/'} target="_blank" className="size-12 glass flex justify-center items-center rounded-lg text-white 
+                {/* <Link href={'https://www.facebook.com/mdiftekher.mahmud/'} target="_blank" className="size-12 glass flex justify-center items-center rounded-lg text-white 
                 bg-[#1877F2]/90
                  hover:-translate-y-1 hover:scale-105
                   transition-all duration-300 ease-in-out
                  ">
                     <i className="fa-brands text-xl fa-facebook-f"></i>
-                </Link>
+                </Link> */}
 
                 <Link href={'https://github.com/iftekher2108'} target="_blank" className="size-12 glass flex justify-center items-center rounded-lg text-white 
                 bg-[#24292e]/90

@@ -9,7 +9,7 @@ export default function AboutMe() {
             <div className="absolute bottom-0 left-0 w-56 h-56 bg-accent/10 rounded-full blur-2xl"></div>
           </div>
           <div className="mb-16 pt-3 relative z-10">
-            <span className="glass rounded-t px-6 py-3 capitalize text-3xl font-bold section-title bg-primary">About Me</span>
+            <p className="glass px-6 py-3 uppercase text-center text-xl font-bold section-title">About Me</p>
           </div>
           <div className="relative grid lg:grid-cols-2 gap-12 items-center z-10 mb-6">
             <div className="flex justify-center">

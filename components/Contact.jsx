@@ -10,14 +10,14 @@ export default function Contact() {
             <div className="relative mx-auto my-8 md:my-10 px-2 md:px-0">
                 {/* Subtle gradient background for section, matching project style */}
 
-                <div className="mb-10 pt-3 relative z-10">
-                    <motion.span initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
-                        className="glass rounded-t px-6 py-3 capitalize text-3xl font-bold section-title bg-primary">
+                <div className="mb-4 pt-3 px-6 relative z-10">
+                    <motion.p initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
+                        className="glass px-6 py-3 uppercase text-xl text-center font-bold section-title">
                         Contact
-                    </motion.span>
+                    </motion.p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-4 p-3 mb-4">
+                <div className="grid md:grid-cols-2 gap-4 p-3 mb-4">
 
                     <div className="col-span-1 card p-5 flex-row border border-transparent hover:border-primary gap-4 bg-base-200 shadow-xl">
                         <div className="size-14 rounded-full bg-primary flex items-center justify-center">
@@ -29,7 +29,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className="col-span-1 card p-5 flex-row border border-transparent hover:border-primary gap-4 bg-base-200 shadow-xl">
+                    {/* <div className="col-span-1 card p-5 flex-row border border-transparent hover:border-primary gap-4 bg-base-200 shadow-xl">
                         <div className="size-14 rounded-full bg-primary flex items-center justify-center">
                             <i className="fa-brands text-2xl fa-facebook-f"></i>
                         </div>
@@ -37,7 +37,7 @@ export default function Contact() {
                             <h4 className="text-xl text-primary font-bold mb-2">Facebook</h4>
                             <p className=" text-sm">www.facebook.com/mdiftekher.mahmud</p>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="col-span-1 card p-5 flex-row border border-transparent hover:border-primary gap-4 bg-base-200 shadow-xl">
                         <div className="size-14 rounded-full bg-primary flex items-center justify-center">
@@ -77,17 +77,17 @@ export default function Contact() {
                                 <form action={'https://formspree.io/f/mqkoqqjw'} method="post" className="flex flex-col gap-4 mt-4">
                                         <label className="floating-label">
                                             <span className="text-base font-semibold">Name</span>
-                                            <input type="text" placeholder="Name" className="input input-bordered input-lg focus:input-primary focus:outline-0  w-full" required />
+                                            <input type="text"  className="input input-bordered input-lg focus:input-primary focus:outline-0  w-full" required />
                                         </label>
 
                                         <label className="floating-label">
                                             <span className="text-base font-semibold">Email</span>
-                                        <input type="email" placeholder="you@email.com" className="input input-bordered input-lg focus:input-primary focus:outline-0 w-full" required />
+                                        <input type="email" className="input input-bordered input-lg focus:input-primary focus:outline-0 w-full" required />
                                         </label>
 
                                         <label className="floating-label">
                                             <span className="text-base font-semibold">Message...</span>
-                                        <textarea className="textarea textarea-lg focus:textarea-primary focus:outline-0 w-full min-h-[150px]" placeholder="message..." required></textarea>
+                                        <textarea className="textarea textarea-lg focus:textarea-primary focus:outline-0 w-full min-h-[150px]" required></textarea>
                                         </label>
 
                                     <button type="submit" className="btn btn-primary btn-lg w-full text-md tracking-[2px] font-bold shadow-md scale-95 hover:scale-100 transition-transform">Send Message</button>

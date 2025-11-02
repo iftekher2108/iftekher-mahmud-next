@@ -19,10 +19,10 @@ export default function Projects({ showFilter = true, limit }) {
   return (
     <div id="projects" className="card md:p-6 p-2 mb-2 bg-base-100 shadow-xl">
       <div className="mb-12 pt-3 relative z-10">
-        <motion.span initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
-          className="glass rounded-t px-6 py-4 capitalize text-3xl font-bold section-title bg-primary">
+        <motion.p initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
+          className="glass px-6 py-3 uppercase text-xl text-center font-bold section-title">
           Projects
-        </motion.span>
+        </motion.p>
       </div>
       {showFilter && (
         <>
@@ -39,7 +39,7 @@ export default function Projects({ showFilter = true, limit }) {
       )}
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3">
         {filteredProjects.map((project, idx) => (
-          <motion.div key={idx} initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} whileHover={{ y: -10 }} transition={{ type: 'spring', stiffness: 200, damping: 18 }} className="card bg-base-200 border border-primary overflow-hidden shadow-lg hover:shadow-xl">
+          <motion.div key={idx} initial={{ opacity: 0, scale: 0.7 }} animate={{ opacity: 1, scale: 1 }} whileHover={{ y: -5, scale:1.01 }} transition={{ type: 'spring', stiffness: 200, damping: 18 }} className="card bg-base-200 border border-primary overflow-hidden shadow-lg hover:shadow-xl">
             <div className="flex justify-center items-center p-3 w-full">
               <Image src={project.picture.trim() !== '' ? project.picture : '/avater.png'} height={400} width={400} className='object-cover grow rounded-lg' alt={project.title} />
             </div>

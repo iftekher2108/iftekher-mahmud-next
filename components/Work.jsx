@@ -9,10 +9,10 @@ export default function Work() {
   return (
     <div id="work" className="card md:p-6 p-2 mb-2 bg-base-100 shadow-xl">
       <div className="mb-10 pt-3 relative z-10">
-        <motion.span initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
-          className="glass rounded-t px-6 py-3 capitalize text-3xl font-bold section-title bg-primary">
+        <motion.p initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
+          className="glass px-6 py-3 uppercase text-xl font-bold text-center section-title">
           Work
-        </motion.span>
+        </motion.p>
       </div>
       <div className="grid md:grid-cols-2 gap-6">
         {works.map((work, idx) => (

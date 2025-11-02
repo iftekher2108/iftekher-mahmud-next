@@ -8,10 +8,10 @@ export default function Education() {
   return (
     <div id="education" className="card md:p-6 p-2 mb-2 bg-base-100 shadow-xl">
       <div className="mb-10 pt-3 relative z-10">
-        <motion.span initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
-          className="glass rounded-t px-6 py-3 capitalize text-3xl font-bold section-title bg-primary">
+        <motion.p initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
+          className="glass px-6 py-3 capitalize text-xl text-center font-bold section-title">
           Education
-        </motion.span>
+        </motion.p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
