@@ -11,16 +11,23 @@ export default function Hero() {
             </div>
             <div className="relative grid lg:grid-cols-2 gap-10 items-center z-10">
                 <div className="col-span-1 p-3">
-                    <h1 className="text-5xl mb-4 font-extrabold text-base-content leading-tight">
-                        Hi, I&#39;m <br />
+                    <h1 className="text-5xl font-extrabold text-base-content leading-tight">
+                        Hey there 👋, I&#39;m <br />
                         <span className="text-primary tracking-[2px]">Iftekher </span><span className="text-stroke tracking-[2px] text-transparent">Mahmud</span>
-                        <br />
-                        <span className="text-2xl font-bold block mt-2 text-error tracking-tight">Software Engineer</span>
                     </h1>
-                    <p className="lg:w-3/4 mb-8 text-lg text-base-content/80 leading-relaxed">I craft <span className="font-semibold text-primary">beautiful</span>, <span className="font-semibold text-secondary">animated</span>, and <span className="font-semibold text-success">content-rich</span> web experiences with various type of technologies. Let&#39;s create something amazing together!</p>
+                    <span className="text-2xl font-bold block my-2 text-error tracking-tight">Software Engineer</span>
+                    <p>
+                        A passionate <span className="text-primary text-base-content leading-relaxed">Software Engineer</span> who builds digital experiences solutions that work beautifully and perform even better.
+                        I’m the kind of developer who believes that great code doesn’t just make a product function — it makes it shine.
+                        Every pixel I align, every line of code I write, has one goal: to build fast, scalable, and meaningful web applications that solve real problems for real people.
+                    </p>
+                    
+                    <p className="lg:w-3/4 mb-8 ">Craft <span className="font-semibold text-primary">beautiful</span>, <span className="font-semibold text-secondary">animated</span>, and <span className="font-semibold text-success">content-rich</span> web experiences with various type of technologies. Let&#39;s create something amazing together!</p>
                     <div className="flex gap-4 mb-6">
+                        <Link href={'/project'} className="btn btn-secondary px-10  hover:scale-105 transition-transform font-bold" > Explore Projects</Link>
                         <Link href={'/contact'} className="btn btn-primary px-10  hover:scale-105 transition-transform font-bold">Hire Me</Link>
                         <a href={'/iftekher_mahmud.pdf'} className="btn btn-info px-10 hover:scale-105 transition-transform font-bold">Get Resume</a>
+                    
                     </div>
                     <IconSocial />
                 </div>

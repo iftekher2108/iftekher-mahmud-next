@@ -71,24 +71,28 @@ export default function Contact() {
                                         </span>
                                     </div>
                                     <h1 className="text-4xl font-extrabold mb-2 text-primary text-center">Contact Us</h1>
-                                    <h2 className="text-lg text-base-content/80 text-center mb-2 font-medium">We love to hear from you!</h2>
-                                    <p className="text-base text-base-content/70 text-center max-w-md mb-2">Fill out the form below and we will get back to you as soon as possible. Whether you have a question, project idea, or just want to say hello, our inbox is always open.</p>
+                                    <h2 className="text-lg text-base-content/80 text-center mb-2 font-medium">Let’s Build Something Amazing</h2>
+                                    <p className="text-base text-base-content/70 text-center max-w-md mb-2">
+                                        I’m always excited to collaborate on projects that challenge my creativity and push boundaries.
+                                        If you’re a company, startup, or individual looking for a Software Engineer who cares about performance, security, scalable system design, and results — let’s talk!
+
+                                    </p>
                                 </div>
                                 <form action={'https://formspree.io/f/mqkoqqjw'} method="post" className="flex flex-col gap-4 mt-4">
-                                        <label className="floating-label">
-                                            <span className="text-base font-semibold">Name</span>
-                                            <input type="text"  className="input input-bordered input-lg focus:input-primary focus:outline-0  w-full" required />
-                                        </label>
+                                    <label className="floating-label">
+                                        <span className="text-base font-semibold">Name</span>
+                                        <input type="text" className="input input-bordered input-lg focus:input-primary focus:outline-0  w-full" required />
+                                    </label>
 
-                                        <label className="floating-label">
-                                            <span className="text-base font-semibold">Email</span>
+                                    <label className="floating-label">
+                                        <span className="text-base font-semibold">Email</span>
                                         <input type="email" className="input input-bordered input-lg focus:input-primary focus:outline-0 w-full" required />
-                                        </label>
+                                    </label>
 
-                                        <label className="floating-label">
-                                            <span className="text-base font-semibold">Message...</span>
+                                    <label className="floating-label">
+                                        <span className="text-base font-semibold">Message...</span>
                                         <textarea className="textarea textarea-lg focus:textarea-primary focus:outline-0 w-full min-h-[150px]" required></textarea>
-                                        </label>
+                                    </label>
 
                                     <button type="submit" className="btn btn-primary btn-lg w-full text-md tracking-[2px] font-bold shadow-md scale-95 hover:scale-100 transition-transform">Send Message</button>
                                 </form>
