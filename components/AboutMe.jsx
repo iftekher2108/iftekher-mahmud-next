@@ -27,7 +27,7 @@ export default function AboutMe() {
             From writing my first line of code in college to developing production-ready web apps for clients, I’ve grown into a developer who values clean architecture, systems design, and measurable business results.
           </p>
           <p className="mb-3 text-base-content leading-relaxed">
-            Over the past 3.5+ years, I’ve worked with Laravel, Next.js, React-native(expo), prisma, express, mongoose Tailwind CSS, PHP and MySQL — building complete ecosystems that balance backend logic with seamless user experiences.
+            Over the past 3.5+ years, I’ve worked with Laravel, Next.js, React-native(expo), prisma, express, mongoose, Tailwind CSS, daisyUI, PHP and MySQL — building complete ecosystems that balance backend logic with seamless user experiences.
           </p>
           <p className="mb-3 text-base-content leading-relaxed">
             I believe great development isn’t about writing code — it’s about understanding people, fixing pain points, and creating something meaningful that truly helps.
