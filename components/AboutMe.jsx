@@ -53,14 +53,12 @@ export default function AboutMe() {
 
         <div className="col-span-2">
 
-
-          <h3 className="text-primary font-semibold text-xl mt-3">What Makes Me Different</h3>
-          <ul>
-            <li>- I think beyond code. I focus on why we’re building something and how it impacts users.</li>
-            <li>- I value teamwork. I love collaborating with designers, devs, and managers to bring clarity and quality.</li>
-            <li>- I never stop learning. Tech moves fast — and so do I.</li>
-          </ul>
-
+          <span className="text-xl font-semibold text-primary">Here’s what I focus on:</span>
+          <p className="mb-3 text-base-content leading-relaxed">
+            I don’t just make apps run — I make them fly. Every line of code is written with speed, scalability, and stability in mind. From optimized database queries to lightning-fast performance, I ensure users get a seamless experience no matter the scale.
+            Design that Converts: I build & use clean UI with smart UX so users stay longer and businesses see better engagement.
+          </p>
+          
           <h3 className="text-primary font-semibold text-xl mt-3">What drives me:</h3>
           <p className="mb-3 text-base-content leading-relaxed">
             I love challenges. Whether it’s optimizing database queries to save server cost, improving website performance to boost conversions, or crafting an interface that feels alive — I’m addicted to the process of making things better.
@@ -69,16 +67,16 @@ export default function AboutMe() {
 
 
 
-          <p className="mb-3 text-base-content leading-relaxed">
-            <span className="text-lg font-semibold text-primary">Here’s what I focus on:</span>
-            <ul>
-              <li>Performance First:
-                I don’t just make apps run — I make them fly. Every line of code is written with speed, scalability, and stability in mind. From optimized database queries to lightning-fast performance, I ensure users get a seamless experience no matter the scale.</li>
-              <li>Design that Converts: I build & use clean UI with smart UX so users stay longer and businesses see better engagement.
-              </li>
-            </ul>
+          <h3 className="text-primary font-semibold text-xl mt-3">What Makes Me Different</h3>
+          <ul>
+            <li>- I think beyond code. I focus on why we’re building something and how it impacts users.</li>
+            <li>- I value teamwork. I love collaborating with designers, devs, and managers to bring clarity and quality.</li>
+            <li>- I never stop learning. Tech moves fast — and so do I.</li>
+          </ul>
 
-          </p>
+          
+
+
 
           <p className="mb-3 text-base-content leading-relaxed">
             <span className="text-lg font-semibold text-primary">Business-Centric Coding:</span><br />
