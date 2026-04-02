@@ -17,7 +17,7 @@ export default function Hero() {
                     </h1>
                     <span className="text-2xl font-bold block my-2 text-error tracking-tight">Software Engineer</span>
                     <p>
-                        A passionate <span className="text-primary text-base-content leading-relaxed">Software Engineer</span> who builds digital experiences solutions that work beautifully and perform even better.
+                        A passionate <span className="text-primary leading-relaxed">Software Engineer</span> who builds digital experiences solutions that work beautifully and perform even better.
                         I’m the kind of developer who believes that great code doesn’t just make a product function — it makes it shine.
                         Every pixel I align, every line of code I write, has one goal: to build fast, scalable, and meaningful web applications that solve real problems for real people.
                     </p>

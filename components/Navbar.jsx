@@ -6,7 +6,7 @@ function Navbar() {
   const pathName = usePathname();
   console.log(pathName)
   return (
-    <div className="fixed z-[300] p-2 rounded-full bottom-7 left-1/2 -translate-x-1/2">
+    <div className="fixed z-300 p-2 rounded-full bottom-7 left-1/2 -translate-x-1/2">
       <div className="flex gap-2 items-center">
         <Link href="/" className={`card glass bg-circle p-3 text-lg ${pathName == '/' ? 'bg-primary' : ''}`}><i className="fa-solid fa-house"></i></Link>
         <Link href="/about" className={`card glass bg-circle p-3 text-lg ${pathName == '/about' ? 'bg-primary' : ''}`}><i className="fa-solid fa-user"></i></Link>
