@@ -17,7 +17,7 @@ export default function Contact() {
                     </motion.p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-4 p-3 mb-4">
+                <div className="grid md:grid-cols-3 grid-cols-1 gap-4 p-3 mb-4">
 
                     <div className="col-span-1 card p-5 flex-row border border-transparent hover:border-primary gap-4 bg-base-200 shadow-xl">
                         <div className="size-14 rounded-full bg-primary flex items-center justify-center">
@@ -29,7 +29,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    {/* <div className="col-span-1 card p-5 flex-row border border-transparent hover:border-primary gap-4 bg-base-200 shadow-xl">
+                    <div className="col-span-1 card p-5 flex-row border border-transparent hover:border-primary gap-4 bg-base-200 shadow-xl">
                         <div className="size-14 rounded-full bg-primary flex items-center justify-center">
                             <i className="fa-brands text-2xl fa-facebook-f"></i>
                         </div>
@@ -37,7 +37,7 @@ export default function Contact() {
                             <h4 className="text-xl text-primary font-bold mb-2">Facebook</h4>
                             <p className=" text-sm">www.facebook.com/mdiftekher.mahmud</p>
                         </div>
-                    </div> */}
+                    </div>
 
                     <div className="col-span-1 card p-5 flex-row border border-transparent hover:border-primary gap-4 bg-base-200 shadow-xl">
                         <div className="size-14 rounded-full bg-primary flex items-center justify-center">
@@ -49,7 +49,6 @@ export default function Contact() {
                         </div>
                     </div>
 
-
                 </div>
 
                 <div className="grid lg:grid-cols-2 items-center justify-center gap-5 ">
@@ -58,7 +57,7 @@ export default function Contact() {
                     </div>
 
                     <div className="col-span-1">
-                        <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 rounded-3xl" />
+                        <div className="absolute inset-0 -z-10 bg-linear-to-br from-primary/10 via-secondary/10 to-accent/10 rounded-3xl" />
                         <div className="card bg-base-100 shadow-xl border border-base-200 overflow-hidden">
                             {/* Decorative background accent */}
                             <div className="absolute -top-20 -left-20 w-72 h-72 bg-primary/10 rounded-full blur-2xl z-0" />
@@ -91,7 +90,7 @@ export default function Contact() {
 
                                     <label className="floating-label">
                                         <span className="text-base font-semibold">Message...</span>
-                                        <textarea className="textarea textarea-lg focus:textarea-primary focus:outline-0 w-full min-h-[150px]" required></textarea>
+                                        <textarea className="textarea textarea-lg focus:textarea-primary focus:outline-0 w-full min-h-37.5" required></textarea>
                                     </label>
 
                                     <button type="submit" className="btn btn-primary btn-lg w-full text-md tracking-[2px] font-bold shadow-md scale-95 hover:scale-100 transition-transform">Send Message</button>

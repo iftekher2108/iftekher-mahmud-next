@@ -1,6 +1,4 @@
-import IconSocial from "./iconSocial"
 import Image from "next/image"
-import Link from "next/link"
 export default function AboutMe() {
   return (
     <div className="relative md:p-6 py-10 p-2 mb-2 card rounded-5 shadow-md bg-base-100 border border-base-200 overflow-hidden">
@@ -11,15 +9,15 @@ export default function AboutMe() {
       <div className="mb-16 pt-3 relative z-10">
         <p className="glass px-6 py-3 uppercase text-center text-xl font-bold section-title">About me</p>
       </div>
-      <div className="relative grid lg:grid-cols-2 gap-4 items-center z-10 mb-6">
-        <div className="flex justify-center">
-          <div className="avatar">
-            <div className="w-full h-full rounded-full shadow-xl ring-4 ring-primary ring-offset-base-100 ring-offset-8 flex items-center justify-center">
-              <Image src={'/about.png'} height={800} width={800} alt="about-avatar" className="object-cover" />
+      <div className="relative lg:grid lg:grid-cols-2 gap-4 items-center z-10 mb-6">
+        <div className="flex col-span-1 justify-center">
+          <div className="avatar md:p-0 p-3">
+            <div className="w-full h-full rounded-full shadow-xl  ring-4 ring-primary ring-offset-base-100 ring-offset-8 flex items-center justify-center">
+              <Image src={'/about.png'} height={800} width={800} alt="about-avatar" className="object-cover " />
             </div>
           </div>
         </div>
-        <div className="p-3">
+        <div className="col-span-1 p-3">
           <h2 className="text-4xl font-extrabold mb-4 text-info">Storyline</h2>
           <p className="mb-3 text-base-content leading-relaxed">
             My coding journey started from pure curiosity — I wanted to understand how the internet actually runs how the Systems actually “work” behind the scenes.

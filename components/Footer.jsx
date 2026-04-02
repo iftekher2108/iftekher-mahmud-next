@@ -2,7 +2,7 @@
 import IconSocial from "./iconSocial";
 export default function Footer() {
   return (
-    <footer className="w-full py-12 min-h-[300px] bg-gradient-to-r from-base-200 to-base-300 text-base-content text-center mt-12 rounded-t-2xl border-t border-base-200">
+    <footer className="w-full py-12 min-h-75 bg-linear-to-r from-base-200 to-base-300 text-base-content text-center mt-12 rounded-t-2xl border-t border-base-200">
 
       <div className="flex items-center justify-center my-4">
         <IconSocial />

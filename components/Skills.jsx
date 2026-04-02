@@ -18,7 +18,7 @@ export default function Skills() {
         </motion.p>
       </div>
 
-      <h3 className='glass font-semibold capicalize text-lg text-center p-2 mb-4'> Front - End </h3>
+      <h3 className='glass font-semibold capicalize text-lg p-1 ps-2 mb-4'> Front - End </h3>
       <ul className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 flex-wrap gap-3 justify-center mb-6">
         {front_end.map((frontend, idx) => (
           <li key={idx}
@@ -41,7 +41,7 @@ export default function Skills() {
       </div> */}
 
 
-      <h3 className='glass font-semibold capitalize text-lg text-center p-2 mb-4'> Back - End </h3>
+      <h3 className='glass font-semibold capitalize text-lg p-1 ps-2 mb-4'> Back - End </h3>
       <ul className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 flex-wrap gap-3 justify-center mb-6">
         {back_end.map((backend, idx) => (
           <li key={idx}
@@ -63,7 +63,7 @@ export default function Skills() {
         <hr className='text-primary border-2 rounded' />
       </div> */}
 
-      <h3 className='glass font-semibold calitalize text-lg text-center p-2 mb-4'> Tools </h3>
+      <h3 className='glass font-semibold calitalize text-lg p-1 ps-2 mb-4'> Tools </h3>
       <ul className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 flex-wrap gap-3 justify-center mb-6">
         {tools.map((tool, idx) => (
           <li key={idx}
