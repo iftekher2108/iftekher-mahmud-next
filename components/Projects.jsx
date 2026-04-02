@@ -45,7 +45,7 @@ export default function Projects({ showFilter = true, limit }) {
             </div>
             <div className="card-body">
               <h3 className="card-title text-primary mb-2">{project.title}</h3>
-              <p className="text-base-content/100 mb-2">{project.description}</p>
+              <p className="text-base-content mb-2">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-2">
                 {project.technologies.map(tech => (
                   <span key={tech} className="badge badge-outline badge-secondary  shadow text-xs font-medium hover:scale-105 transition-all duration-300 ease-in-out">{tech}</span>
