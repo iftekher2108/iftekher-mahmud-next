@@ -9,88 +9,64 @@ export default function AboutMe() {
       <div className="mb-16 pt-3 relative z-10">
         <p className="glass px-6 py-3 uppercase text-center text-xl font-bold section-title">About me</p>
       </div>
-      <div className="relative lg:grid lg:grid-cols-2 gap-4 items-center z-10 mb-6">
-        <div className="flex col-span-1 justify-center">
-          <div className="avatar md:p-0 p-3">
-            <div className="w-full h-full rounded-full shadow-xl  ring-4 ring-primary ring-offset-base-100 ring-offset-8 flex items-center justify-center">
-              <Image src={'/about.png'} height={800} width={800} alt="about-avatar" className="object-cover " />
-            </div>
-          </div>
+      <div className="relative lg:grid lg:grid-cols-2 gap-2 justify-between z-10 mb-6">
+        <div className="col-span-1">
+            <Image src={'/iftekher-about.png'} height={650} width={650} alt="about-avatar" />
         </div>
-        <div className="col-span-1 p-3">
+        <div className="col-span-1 pb-3">
           <h2 className="text-4xl font-extrabold mb-4 text-info">Storyline</h2>
-          <p className="mb-3 text-base-content leading-relaxed">
-            My coding journey started from pure curiosity — I wanted to understand how the internet actually runs how the Systems actually “work” behind the scenes.
-            That curiosity soon turned into passion, and today I stand as a problem-solver, a Software Engineer, and a developer who blends performance with precision.
-            From writing my first line of code in college to developing production-ready web apps for clients, I’ve grown into a developer who values clean architecture, systems design, and measurable business results.
+          <p className="mb-3 text-base-content text-justify leading-relaxed">
+            My coding journey started with pure curiosity. 
+            I wanted to understand how the internet works and what happens behind the systems we use every day.
+             That curiosity quickly became a passion, leading me to become a Software Engineer and problem-solver who combines performance,
+               precision, and practical thinking.
           </p>
-          <p className="mb-3 text-base-content leading-relaxed">
-            Over the past 3.5+ years, I’ve worked with Laravel, Next.js, React-native(expo), prisma, express, mongoose, Tailwind CSS, daisyUI, PHP and MySQL — building complete ecosystems that balance backend logic with seamless user experiences.
+          <p className="mb-3 text-base-content text-justify leading-relaxed">
+            Over the past 3.5+ years, I’ve worked with technologies including Laravel, Next.js, React, React Native (Expo), Tailwind CSS, DaisyUI, PHP and MySQL.
+             I build complete digital solutions that connect reliable backend systems with clean, responsive, and user-friendly experiences.
           </p>
-          <p className="mb-3 text-base-content leading-relaxed">
-            I believe great development isn’t about writing code — it’s about understanding people, fixing pain points, and creating something meaningful that truly helps.
+
+          <p className="mb-3 text-base-content text-justify leading-relaxed">
+            I believe great software development is not just about writing code.
+             It’s about understanding people, solving real problems, and creating solutions that deliver measurable value.
           </p>
-          <p className="mb-3 text-base-content leading-relaxed">
-            With a background in <span className="font-semibold text-secondary">Computer Sciense</span> and a love for <span className="font-semibold text-info">digital Solutions</span>, I specialize in building <span className="font-semibold text-primary">secure</span>, <span className="font-semibold text-secondary">optimized</span>, and <span className="font-semibold text-success">scalable</span> system.
-            <br />My mission is simple Turn ideas into digital solutions that help businesses grow.
+          <h4 className="text-primary font-semibold text-lg mt-3">What I Focus On</h4>
+          <p className="mb-3 text-base-content text-justify leading-relaxed">
+              I build software with performance, scalability, security, and stability in mind.
+               From optimizing database queries and APIs to designing efficient backend architectures,
+                I focus on creating systems that remain fast and reliable as they grow.
           </p>
-          <p className="text-base-content leading-relaxed">
-            I’m not just build Solutions.
-            I’m engineering systems — with proper database design, modular API structures, caching strategies, and secure authentication layers.
-            design systems that save time, cut costs, and grow businesses. <br />
-            Whether it’s automating systems for industries, building secure document tools, or creating full-featured management systems — I develop software that actually makes a difference.
-            I don’t stop at functionality — I focus on speed, security, usability, and maintainability.
+
+            <p className="text-base-content text-justify leading-relaxed">
+              On the frontend, I care about clean UI, intuitive UX, responsiveness,
+               and smooth interactions—because a good product should not only work well but also feel great to use.
+            </p>
+
+          <h4 className="text-primary font-semibold text-lg mt-3">What Makes Me Different</h4>
+          <ul className="list-disc text-justify">
+            <li>Think Beyond Code- I focus on the purpose behind a project and how it can create value for users and businesses.</li>
+            <li>Value Collaboration- I enjoy working with designers, developers, and managers to turn ideas into clear and effective solutions.</li>
+            <li>Keep Learning- Technology evolves quickly, and I continuously improve my skills to build better solutions.</li>
+          </ul>
+          <h4 className="text-primary font-semibold text-lg mt-3">Business-Focused Development</h4>
+          <p className="text-base-content text-justify leading-relaxed">
+            My approach is always business-centric. I aim to build digital solutions that improve efficiency,
+             reduce unnecessary costs, automate workflows, and support business growth and Easy to use.
+          </p>
+
+          <p className="text-base-content text-justify leading-relaxed">
+            With a background in Computer Science and a passion for digital solutions,
+             I specialize in building secure, optimized, scalable, and maintainable systems.
           </p>
 
           {/* <div className="flex gap-4 mb-6">
             <Link href={'/contact'} className="btn glass bg-accent  px-10 hover:scale-105 transition-transform font-bold">Let&#39;s Talk</Link>
             <Link href='/iftekher_mahmud.pdf' className="btn btn-outline  px-10 hover:scale-105 transition-transform font-bold">Download CV</Link>
-          </div>
-          <IconSocial /> */}
-        </div>
-
-        <div className="col-span-2">
-
-          <span className="text-xl font-semibold text-primary">Here’s what I focus on:</span>
-          <p className="mb-3 text-base-content leading-relaxed">
-            I don’t just make apps run — I make them fly. Every line of code is written with speed, scalability, and stability in mind. From optimized database queries to lightning-fast performance, I ensure users get a seamless experience no matter the scale.
-            Design that Converts: I build & use clean UI with smart UX so users stay longer and businesses see better engagement.
-          </p>
-          
-          <h3 className="text-primary font-semibold text-xl mt-3">What drives me:</h3>
-          <p className="mb-3 text-base-content leading-relaxed">
-            I love challenges. Whether it’s optimizing database queries to save server cost, improving website performance to boost conversions, or crafting an interface that feels alive — I’m addicted to the process of making things better.
-            From writing my first line of code in college to developing production-ready web apps for clients, I’ve grown into a developer who values clean architecture, responsive design, and measurable business results.
-          </p>
-
-
-
-          <h3 className="text-primary font-semibold text-xl mt-3">What Makes Me Different</h3>
-          <ul>
-            <li>- I think beyond code. I focus on why we’re building something and how it impacts users.</li>
-            <li>- I value teamwork. I love collaborating with designers, devs, and managers to bring clarity and quality.</li>
-            <li>- I never stop learning. Tech moves fast — and so do I.</li>
-          </ul>
-
-          
-
-
-
-          <p className="mb-3 text-base-content leading-relaxed">
-            <span className="text-lg font-semibold text-primary">Business-Centric Coding:</span><br />
-            I develop with ROI (returns of investment) at the core. My focus goes beyond code — I build digital solutions that solve real business problems, enhance efficiency, and increase profitability. Whether it’s automating workflows or optimizing performance, I make sure every project delivers measurable results.
-          </p>
-          <ul>
-            <li>- Boosted Performance: Improved overall site load time by 45%, leading to faster interactions and higher client conversion rates.</li>
-            <li>- Optimized Efficiency: Reduced API server costs by 30% through smart query optimization and better resource management.</li>
-            <li>- Enhanced Productivity: Built reusable modular components that cut future development time by 40%, making project scaling faster and smoother.</li>
-          </ul>
-
-          <p className="my-3 text-base-content leading-relaxe">“My favorite part about development? Watching something I built make someone’s life a little easier.”</p>
-
+          </div> */}
+          {/* <IconSocial /> */}
 
         </div>
-
+     
       </div>
     </div>
   )
