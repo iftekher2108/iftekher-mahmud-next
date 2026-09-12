@@ -17,7 +17,7 @@ export default function Template({ children }) {
                 setTheme(savedTheme);
                 document.documentElement.setAttribute('data-theme', savedTheme);
             } else {
-                document.documentElement.setAttribute('data-theme', savedTheme);
+                document.documentElement.setAttribute('data-theme', "default");
             }
         }
     }, []);

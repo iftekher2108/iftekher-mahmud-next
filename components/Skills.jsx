@@ -30,7 +30,7 @@ export default function Skills() {
               backgroundColor: isHovered == frontend.title ? frontend.color : ''
             }}
           >
-            <Image src={frontend.picture} height={50} width={50} className='rounded-2xl' alt={frontend.title} />
+            <Image src={frontend.picture} height={50} width={50} className='h-10 w-auto rounded-2xl' alt={frontend.title} />
             <p className='text-base-content font-bold'>{frontend.title}</p>
           </li>
         ))}
@@ -53,7 +53,7 @@ export default function Skills() {
               backgroundColor: isHovered == backend.title ? backend.color : ''
             }}
           >
-            <Image src={backend.picture} height={50} width={50} className='rounded-2xl' alt={backend.title} />
+            <Image src={backend.picture} height={50} width={50} className='h-10 w-auto rounded-2xl' alt={backend.title} />
             <p className='text-base-content font-bold'>{backend.title}</p>
           </li>
         ))}
@@ -69,13 +69,13 @@ export default function Skills() {
           <li key={idx}
             onMouseEnter={() => setIsHovered(tool.title)}
             onMouseLeave={() => setIsHovered(null)}
-            className={`flex flex-col items-center justify-center gap-3 card p-4 shadow-lg border-2 hover:-translate-y-1 hover:scale-105 transition-all duration-300 cursor-pointer select-none`}
+            className={`flex flex-col items-center justify-center gap-2 card p-4 shadow-lg border-2 hover:-translate-y-1 hover:scale-105 transition-all duration-300 cursor-pointer select-none`}
             style={{
               borderColor: tool.color,
               backgroundColor: isHovered == tool.title ? tool.color : ''
             }}
           >
-            <Image src={tool.picture} height={50} width={50} className='rounded-2xl' alt={tool.title} />
+            <Image src={tool.picture} height={50} width={50} className=' h-10 w-auto rounded-2xl' alt={tool.title} />
             <p className='text-base-content font-bold'>{tool.title}</p>
           </li>
         ))}
