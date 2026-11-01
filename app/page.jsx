@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
 import Contact from "@/components/Contact";
 import Script from "next/script";
+import Service from "@/components/Service";
 
 export const metadata = {
   title: "Iftekher Mahmud - Software Engineer",
@@ -47,6 +48,11 @@ export default function Home() {
       {/* About Section */}
       <AnimatedSection delay={0.3}>
         <AboutMe />
+      </AnimatedSection>
+
+      {/* Service Section */}
+      <AnimatedSection>
+        <Service />
       </AnimatedSection>
 
       {/* Projects Section */}

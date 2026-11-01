@@ -23,10 +23,12 @@ export default function Hero() {
                             1500,
                             'Full-Stack Web Developer',
                             1500,
-                            'App Developer',
+                            'AI Developer',
                             1500,
-                            // 'We produce food for Chinchillas',
-                            // 1500
+                            'Mobile App Developer',
+                            1500,
+                            'Wordpress Developer',
+                            1500
                         ]}
                         wrapper="span"
                         speed={50}

@@ -40,18 +40,18 @@ export default function Projects({ showFilter = true, limit }) {
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3">
         {filteredProjects.map((project, idx) => (
           <motion.div key={idx} initial={{ opacity: 0, scale: 0.7 }} animate={{ opacity: 1, scale: 1 }} whileHover={{ y: -5, scale:1.01 }} transition={{ type: 'spring', stiffness: 200, damping: 18 }} className="card bg-base-200 border border-primary overflow-hidden shadow-lg hover:shadow-xl">
-            <div className="flex justify-center items-center p-3 w-full">
+            <div className="flex justify-center items-center p-2 w-full">
               <Image src={project.picture.trim() !== '' ? project.picture : '/avater.png'} height={400} width={400} className='object-cover grow rounded-lg' alt={project.title} />
             </div>
-            <div className="card-body">
-              <h3 className="card-title text-primary mb-2">{project.title}</h3>
-              <p className="text-base-content text-justify mb-2">{project.description}</p>
+            <div className="card-body p-4">
+              <h3 className="card-title text-primary mb-1">{project.title}</h3>
+              <p className="text-base-content text-justify mb-1">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-2">
                 {project.technologies.map(tech => (
-                  <span key={tech} className="badge badge-outline badge-secondary  shadow text-xs font-medium hover:scale-105 transition-all duration-300 ease-in-out">{tech}</span>
+                  <span key={tech} className="badge badge-outline badge-primary  shadow text-xs font-medium hover:scale-105 transition-all duration-300 ease-in-out">{tech}</span>
                 ))}
               </div>
-              <div className='flex gap-3 py-3 px-10'>
+              <div className='flex gap-3 py-2 px-10'>
                 {project.git_link && <Link href={project.git_link} target='_blank' className="btn btn-sm grow btn-accent hover:scale-105 btn-outline transition-all duration-300 ease-in-out">Github</Link>}
                 {project.link && <Link href={project.link} target='_blank' className="btn btn-sm grow btn-success hover:scale-105 btn-outline transition-all duration-300 ease-in-out">View Project</Link>}
               </div>
