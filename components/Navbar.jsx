@@ -9,6 +9,7 @@ function Navbar() {
       <div className="flex gap-2 items-center">
         <Link href="/" className={`card glass bg-circle p-3 text-lg ${pathName == '/' ? 'bg-primary' : ''}`}><i className="fa-solid fa-house"></i></Link>
         <Link href="/about" className={`card glass bg-circle p-3 text-lg ${pathName == '/about' ? 'bg-primary' : ''}`}><i className="fa-solid fa-user"></i></Link>
+        <Link href="/service" className={`card glass bg-circle p-3 text-lg ${pathName == '/service' ? 'bg-primary' : ''}`}><i className="fa-solid fa-screwdriver-wrench"></i></Link>
         <Link href="/project" className={`card glass bg-circle p-3 text-lg ${pathName == '/project' ? 'bg-primary' : ''}`}><i className="fa-solid fa-bars-progress"></i></Link>
         <Link href="/tech-skill" className={`card glass bg-circle p-3 text-lg ${pathName == '/tech-skill' ? 'bg-primary' : ''}`}><i className="fa-solid fa-graduation-cap"></i></Link>
         <Link href="/contact" className={`card glass bg-circle p-3 text-lg ${pathName == '/contact' ? 'bg-primary' : ''}`}><i className="fa-solid fa-envelope"></i></Link>
