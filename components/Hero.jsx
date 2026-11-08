@@ -19,9 +19,9 @@ export default function Hero() {
                     </h1>
                     <TypeAnimation
                         sequence={[
-                            'Software Engineer',
+                            'Full-Stack Developer',
                             1500,
-                            'Full-Stack Web Developer',
+                            'Software Engineer',
                             1500,
                             'AI Developer',
                             1500,

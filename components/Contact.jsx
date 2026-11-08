@@ -44,7 +44,7 @@ export default function Contact() {
                             <i className="fa-brands text-2xl fa-google"></i>
                         </div>
                         <div>
-                            <h4 className="text-xl text-primary font-bold mb-2">G-mail</h4>
+                            <h4 className="text-xl text-primary font-bold mb-2">Email</h4>
                             <p className=" text-sm">iftekhermahmud1@gmail.com</p>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ export default function Contact() {
                                             <i className="fa-solid fa-envelope text-3xl"></i>
                                         </span>
                                     </div>
-                                    <h1 className="text-4xl font-extrabold mb-2 text-primary text-center">Contact Us</h1>
+                                    <h1 className="text-4xl font-extrabold mb-2 text-primary text-center">Get In Touch</h1>
                                     <h2 className="text-lg text-base-content/80 text-center mb-2 font-medium">Let’s Build Something Amazing</h2>
                                     <p className="text-base text-base-content/70 text-center max-w-md mb-2">
                                         I’m always excited to collaborate on projects that challenge my creativity and push boundaries.
