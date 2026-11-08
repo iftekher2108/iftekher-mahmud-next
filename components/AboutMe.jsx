@@ -7,14 +7,14 @@ export default function AboutMe() {
         <div className="absolute bottom-0 left-0 w-56 h-56 bg-accent/10 rounded-full blur-2xl"></div>
       </div>
       <div className="mb-16 pt-3 relative z-10">
-        <p className="glass px-6 py-3 uppercase text-center text-xl font-bold section-title">About me</p>
+        <p className="glass px-6 py-3 text-center rounded shadow-xl text-3xl font-bold ">About me</p>
       </div>
       <div className="relative lg:grid lg:grid-cols-2 gap-6 justify-between z-10 mb-4">
         <div className="col-span-1">
             <Image src={'/about-us.png'} className="h-auto rounded-lg" height={750} width={650} alt="about-avatar" />
         </div>
         <div className="col-span-1 pb-2">
-          <h2 className="text-4xl font-extrabold mb-2 text-info">Storyline</h2>
+          {/* <h2 className="text-4xl font-extrabold mb-2 text-info">Storyline</h2> */}
           <p className="mb-2 text-base-content text-sm text-justify leading-relaxed">
             My coding journey started with pure curiosity. 
             I wanted to understand how the internet works and what happens behind the systems we use every day.
@@ -30,7 +30,7 @@ export default function AboutMe() {
             I believe great development is not just about writing code.
              It’s about understanding people, solving real problems, and creating solutions that deliver measurable value.
           </p>
-          <h4 className="text-primary font-semibold text-lg mt-2">What I Focus On</h4>
+          <h4 className="font-semibold text-lg mt-2">What I Focus On</h4>
           <p className="mb-2 text-base-content text-sm text-justify leading-relaxed">
               I build software with performance, scalability, security, and stability in mind.
                From optimizing database queries and APIs to designing efficient backend architectures,
@@ -42,13 +42,13 @@ export default function AboutMe() {
                and smooth interactions—because a good product should not only work well but also feel great to use.
             </p>
 
-          <h4 className="text-primary font-semibold text-lg mt-2">What Makes Me Different</h4>
+          <h4 className="font-semibold text-lg mt-2">What Makes Me Different</h4>
           <ul className="text-sm text-justify">
             <li>Think Beyond Code- I focus on the purpose behind a project and how it can create value for users and businesses.</li>
             <li>Value Collaboration- I enjoy working with designers, developers, and managers to turn ideas into clear and effective solutions.</li>
             <li>Keep Learning- Technology evolves quickly, and I continuously improve my skills to build better solutions.</li>
           </ul>
-          <h4 className="text-primary font-semibold text-lg mt-2">Business-Focused Development</h4>
+          <h4 className="font-semibold text-lg mt-2">Business-Focused Development</h4>
           <p className="text-base-content text-sm text-justify leading-relaxed">
             My approach is always business-centric. I aim to build digital solutions that improve efficiency,
              reduce unnecessary costs, automate workflows, and support business growth and Easy to use.

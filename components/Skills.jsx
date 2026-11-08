@@ -18,13 +18,14 @@ export default function Skills() {
         </motion.p>
       </div>
 
-      <h3 className='glass font-semibold capicalize text-lg p-1 ps-2 mb-4'> Front - End </h3>
+      <h3 className=' font-semibold text-xl'> Frontend development </h3>
+      <p className='text-sm mb-4'>Building responsive, accessible interfaces and interactive user experiences.</p>
       <ul className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 flex-wrap gap-3 justify-center mb-6">
         {front_end.map((frontend, idx) => (
           <li key={idx}
             onMouseEnter={() => setIsHovered(frontend.title)}
             onMouseLeave={() => setIsHovered(null)}
-            className={`flex flex-col items-center justify-center gap-3 card p-4 shadow-lg border-2 hover:-translate-y-1 hover:scale-105 transition-all duration-300 cursor-pointer select-none`}
+            className={`flex flex-row items-center gap-3 card p-4 shadow-lg border-2 hover:-translate-y-1 hover:scale-105 transition-all duration-300 cursor-pointer select-none`}
             style={{
               borderColor: frontend.color,
               backgroundColor: isHovered == frontend.title ? frontend.color : ''
@@ -41,13 +42,14 @@ export default function Skills() {
       </div> */}
 
 
-      <h3 className='glass font-semibold capitalize text-lg p-1 ps-2 mb-4'> Back - End </h3>
+      <h3 className=' font-semibold text-xl'> Backend development </h3>
+      <p className='text-sm mb-4'>Developing application logic, APIs, authentication, and server-side features.</p>
       <ul className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 flex-wrap gap-3 justify-center mb-6">
         {back_end.map((backend, idx) => (
           <li key={idx}
             onMouseEnter={() => setIsHovered(backend.title)}
             onMouseLeave={() => setIsHovered(null)}
-            className={`flex flex-col items-center justify-center gap-3 card p-4 shadow-lg border-2 hover:-translate-y-1 hover:scale-105 transition-all duration-300 cursor-pointer select-none`}
+            className={`flex flex-row items-center gap-3 card p-4 shadow-lg border-2 hover:-translate-y-1 hover:scale-105 transition-all duration-300 cursor-pointer select-none`}
             style={{
               borderColor: backend.color,
               backgroundColor: isHovered == backend.title ? backend.color : ''
@@ -63,13 +65,14 @@ export default function Skills() {
         <hr className='text-primary border-2 rounded' />
       </div> */}
 
-      <h3 className='glass font-semibold calitalize text-lg p-1 ps-2 mb-4'> Tools </h3>
+      <h3 className=' font-semibold text-xl'> Tools & workflow </h3>
+      <p className='text-sm mb-4'>Using development tools for version control, API testing, and daily delivery.</p>
       <ul className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 flex-wrap gap-3 justify-center mb-6">
         {tools.map((tool, idx) => (
           <li key={idx}
             onMouseEnter={() => setIsHovered(tool.title)}
             onMouseLeave={() => setIsHovered(null)}
-            className={`flex flex-col items-center justify-center gap-2 card p-4 shadow-lg border-2 hover:-translate-y-1 hover:scale-105 transition-all duration-300 cursor-pointer select-none`}
+            className={`flex flex-row items-center gap-3 card p-4 shadow-lg border-2 hover:-translate-y-1 hover:scale-105 transition-all duration-300 cursor-pointer select-none`}
             style={{
               borderColor: tool.color,
               backgroundColor: isHovered == tool.title ? tool.color : ''

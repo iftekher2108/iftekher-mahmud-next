@@ -6,13 +6,13 @@ import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero() {
     return (
-        <div className="hero-section relative md:p-6 p-2 mb-2 card rounded-5 shadow-md border-base-200 overflow-hidden">
+        <div className="hero-section relative md:pt-6 md:px-6 pt-2 card rounded-5 shadow-md border-base-200 overflow-hidden">
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute -top-16 -left-16 w-80 h-80 bg-primary/10 rounded-full blur-2xl"></div>
                 <div className="absolute bottom-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-2xl"></div>
             </div>
             <div className="relative grid lg:grid-cols-2 gap-10 items-center z-10">
-                <div className="col-span-1 p-3">
+                <div className="col-span-1 p-3 mb-3">
                     <h1 className="text-5xl font-extrabold text-base-content leading-tight">
                         Hi I&#39;m <br />
                         <span className="text-primary tracking-[2px]">Iftekher </span><span className="text-stroke tracking-[2px] text-transparent">Mahmud</span>
@@ -56,9 +56,9 @@ export default function Hero() {
                     </div>
                     <IconSocial />
                 </div>
-                <div className="flex relative justify-center p-3">
-                    <div className="avatar hero-picture rounded-tl-[50%] rounded-br-[50%] border-0 outline-0 ring-4 ring-offset-base-100 ring-offset-5 shadow-xl flex items-center justify-center ring-primary ">
-                        <Image src={'/hero.png'} height={400} width={400} alt="hero-avater" className="object-cover rounded-br-[50%] rounded-tl-[50%]" />
+                <div className="flex relative justify-center pt-3 px-3">
+                    <div className="avatar hero-picture flex items-end justify-center">
+                        <Image src={'/hero.png'} height={400} width={400} alt="hero-avater" className="object-cover" />
                     </div>
                 </div>
             </div>
