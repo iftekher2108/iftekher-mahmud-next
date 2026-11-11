@@ -129,7 +129,7 @@ export default function Skills() {
 
               {/* Bottom Accent */}
               <div
-                className="absolute bottom-0 left-0 w-full h-[3px] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
+                className="absolute bottom-0 left-0 w-full h-0.75 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center"
                 style={{ backgroundColor: frontend.color }}
               />
             </motion.li>
