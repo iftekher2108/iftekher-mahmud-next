@@ -12,7 +12,7 @@ export default function Hero() {
                 <div className="absolute bottom-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-2xl"></div>
             </div>
             <div className="relative grid lg:grid-cols-2 gap-10 items-center z-10">
-                <div className="col-span-1 p-3 mb-3">
+                <div className="col-span-1 p-3 mb-2">
                     <h1 className="text-5xl font-extrabold text-base-content leading-tight">
                         Hi I&#39;m <br />
                         <span className="text-primary tracking-[2px]">Iftekher </span><span className="text-stroke tracking-[2px] text-transparent">Mahmud</span>
@@ -37,7 +37,7 @@ export default function Hero() {
                         repeat={Infinity}
                     />
                     {/* <span className="text-2xl font-bold block my-2 text-error tracking-tight">Software Engineer</span> */}
-                    <p className="text-justify">
+                    <p className="text-base md:text-lg text-base-content/60 text-justify">
                         I build modern websites, high-performance web applications, and intelligent AI-powered solutions that help businesses automate operations, improve efficiency, and accelerate growth.
 
                         I focus on clean design, smooth performance, and user-friendly experiences, helping businesses and individuals turn their ideas into reality through fast, scalable, and reliable digital products.
@@ -45,13 +45,19 @@ export default function Hero() {
                         By combining technology, creativity, and problem-solving, I develop smart solutions that save time, reduce manual work, simplify everyday tasks, and create real value for businesses and people.
                     </p>
 
-                    <p className="lg:w-3/4 mb-8 ">
+                    <p className="lg:w-3/4 mb-4 mt-2">
                         Let’s turn your <span className="font-semibold text-success">ideas</span> into something <span className="font-semibold text-primary">amazing</span>!
                     </p>
-                    <div className="flex flex-wrap gap-4 mb-6">
+                    <div className="flex flex-wrap gap-4 mb-4">
                         {/* <Link href={'/project'} className="btn btn-secondary px-10  hover:scale-105 transition-transform font-bold" > Explore Projects</Link> */}
-                        <Link href={'/contact'} className="btn btn-primary px-10  hover:scale-105 transition-transform font-bold">Hire Me</Link>
-                        <a href={'/iftekher_mahmud.pdf'} className="btn btn-info px-10 hover:scale-105 transition-transform font-bold">Get Resume</a>
+                        <Link href={'/contact'} className="btn btn-primary p-5 text-base hover:scale-105 transition-transform">
+                            Hire Me
+                            <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                        </Link>
+                        <a href={'/iftekher_mahmud.pdf'} className="btn btn-info p-5 text-base hover:scale-105 transition-transform">
+                            Get Resume
+                            <i className="fa-solid fa-link"></i>
+                        </a>
 
                     </div>
                     <IconSocial />

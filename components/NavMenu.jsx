@@ -1,5 +1,6 @@
 'use client'
-import Link from "next/link"
+import Link from "next/link";
+import Image from 'next/image';
 
 export default function NavMenu({ theme, setTheme }) {
     const themeList = [
@@ -12,12 +13,15 @@ export default function NavMenu({ theme, setTheme }) {
 
     return (
         <div className="sticky z-50 top-0">
-            <div className="navbar bg-base-100 shadow-sm relative px-6">
-                <div className="flex-1">
-                    <Link href={'/'} className="btn btn-outline btn-primary p-5 hover:scale-105">Iftekher Mahmud</Link>
-                </div>
+            <div className=" relative px-6">
+                {/* <div className="flex-1">
+                    <Link href={'/'} className="flex transition-all duration-300 ease-in-out scale-95 hover:scale-100">
+                        <Image src={'/hero.png'} className="border" height={100} width={80} alt="logo" />
+                        <p className="btn btn-outline btn-primary p-5">Iftekher Mahmud</p> 
+                    </Link>
+                </div> */}
 
-                <div className="dropdown mb-72 z-50 absolute top-[50%] translate-y-[-50%] right-[2%]">
+                <div className="dropdown mb-72 z-50 absolute top-[50%] translate-y-[50%] right-[2%]">
                     <div tabIndex={0} role="button" className="btn btn-primary flex items-center pl-4 m-1">
                         <i className="fa-solid fa-palette me-1 mt-1"></i>
                         <p>Theme</p>
@@ -31,7 +35,7 @@ export default function NavMenu({ theme, setTheme }) {
                         </svg>
                     </div>
                     <ul className="dropdown-content bg-base-300 flex flex-col gap-1 rounded-box overflow-y-scroll h-[25vh] z-1 w-34 p-2 shadow-xl">
-                        {themeList.map((item,index) => (
+                        {themeList.map((item, index) => (
                             <li key={index}>
                                 <input
                                     type="radio"
@@ -41,7 +45,7 @@ export default function NavMenu({ theme, setTheme }) {
                                     value={item}
                                     checked={theme === item}
                                     onChange={(e) => setTheme(e.target.value)}
-                                     />
+                                />
                             </li>
                         ))}
                     </ul>

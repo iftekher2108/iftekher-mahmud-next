@@ -23,17 +23,21 @@ export default function AboutMe() {
 
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
           About{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary">
             Me
           </span>
         </h2>
 
-        <p className="max-w-2xl mx-auto text-base md:text-lg text-base-content/60 leading-relaxed">
+        <p className="max-w-2xl mx-auto text-base md:text-lg text-base-content/60">
           A little about my journey, experience, passion, and the
           technology I use to turn ideas into meaningful digital solutions.
         </p>
 
-        <div className="w-20 h-1 mx-auto rounded-full bg-gradient-to-r from-primary to-secondary" />
+        <div className="flex items-center justify-center gap-2 pt-1">
+          <span className="w-10 h-1 rounded-full bg-primary"></span>
+          <span className="w-3 h-1 rounded-full bg-secondary"></span>
+          <span className="w-10 h-1 rounded-full bg-primary/30"></span>
+        </div>
       </motion.div>
 
 
@@ -43,7 +47,7 @@ export default function AboutMe() {
         </div>
         <div className="col-span-1 pb-2">
           {/* <h2 className="text-4xl font-extrabold mb-2 text-info">Storyline</h2> */}
-          <p className="mb-2 text-base-content text-sm text-justify leading-relaxed">
+          <p className="text-base md:text-lg text-base-content/60 text-justify">
             My coding journey started with pure curiosity.
             I wanted to understand how the internet works and what happens behind the systems we use every day.
             That curiosity quickly became a passion, leading me to become a Software Engineer and problem-solver who combines performance,
@@ -54,30 +58,30 @@ export default function AboutMe() {
              I build complete digital solutions that connect reliable backend systems with clean, responsive, and user-friendly experiences.
           </p> */}
 
-          <p className="mb-2 text-base-content text-sm text-justify leading-relaxed">
+          <p className="text-base md:text-lg text-base-content/60 text-justify ">
             I believe great development is not just about writing code.
             It’s about understanding people, solving real problems, and creating solutions that deliver measurable value.
           </p>
-          <h4 className="font-semibold text-lg mt-2">What I Focus On</h4>
-          <p className="mb-2 text-base-content text-sm text-justify leading-relaxed">
+          <h4 className="font-semibold text-lg mt-1">What I Focus On</h4>
+          <p className="text-base md:text-lg text-base-content/60 text-justify ">
             I build software with performance, scalability, security, and stability in mind.
             From optimizing database queries and APIs to designing efficient backend architectures,
             I focus on creating systems that remain fast and reliable as they grow.
           </p>
 
-          <p className="text-base-content text-sm text-justify leading-relaxed">
+          <p className="text-base md:text-lg text-base-content/60 text-justify ">
             On the frontend, I care about clean UI, intuitive UX, responsiveness,
             and smooth interactions—because a good product should not only work well but also feel great to use.
           </p>
 
-          <h4 className="font-semibold text-lg mt-2">What Makes Me Different</h4>
-          <ul className="text-sm text-justify">
+          <h4 className="font-semibold text-lg mt-1">What Makes Me Different</h4>
+          <ul className="text-base md:text-lg text-base-content/60 text-justify">
             <li>Think Beyond Code- I focus on the purpose behind a project and how it can create value for users and businesses.</li>
-            <li>Value Collaboration- I enjoy working with designers, developers, and managers to turn ideas into clear and effective solutions.</li>
+            {/* <li>Value Collaboration- I enjoy working with designers, developers, and managers to turn ideas into clear and effective solutions.</li> */}
             <li>Keep Learning- Technology evolves quickly, and I continuously improve my skills to build better solutions.</li>
           </ul>
-          <h4 className="font-semibold text-lg mt-2">Business-Focused Development</h4>
-          <p className="text-base-content text-sm text-justify leading-relaxed">
+          <h4 className="font-semibold text-lg mt-1">Business-Focused Development</h4>
+          <p className="text-base md:text-lg text-base-content/60 text-justify leading-relaxed">
             My approach is always business-centric. I aim to build digital solutions that improve efficiency,
             reduce unnecessary costs, automate workflows, and support business growth and Easy to use.
           </p>

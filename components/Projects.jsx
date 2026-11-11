@@ -19,31 +19,35 @@ export default function Projects({ showFilter = true, limit }) {
   return (
     <div id="projects" className="card md:p-6 p-2 mb-2 bg-base-100 shadow-xl overflow-x-hidden">
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="text-center space-y-4 mt-4 mb-8"
-        >
-          <span className="inline-block px-4 py-1.5 text-sm font-semibold tracking-widest uppercase rounded-full bg-primary/10 text-primary">
-            Portfolio Work
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+        className="text-center space-y-4 mt-4 mb-8"
+      >
+        <span className="inline-block px-4 py-1.5 text-sm font-semibold tracking-widest uppercase rounded-full bg-primary/10 text-primary">
+          Portfolio Work
+        </span>
+
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
+          Featured{" "}
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary">
+            Projects
           </span>
+        </h2>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
-            Featured{" "}
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary">
-              Projects
-            </span>
-          </h2>
+        <p className="max-w-2xl mx-auto text-base md:text-lg text-base-content/60">
+          Explore some of my recent work, where creativity meets technology
+          to build modern, scalable, and impactful digital experiences.
+        </p>
 
-          <p className="max-w-2xl mx-auto text-base md:text-lg text-base-content/60 leading-relaxed">
-            Explore some of my recent work, where creativity meets technology
-            to build modern, scalable, and impactful digital experiences.
-          </p>
-
-          <div className="w-20 h-1 mx-auto rounded-full bg-linear-to-r from-primary to-secondary" />
-        </motion.div>
+        <div className="flex items-center justify-center gap-2 pt-1">
+          <span className="w-10 h-1 rounded-full bg-primary"></span>
+          <span className="w-3 h-1 rounded-full bg-secondary"></span>
+          <span className="w-10 h-1 rounded-full bg-primary/30"></span>
+        </div>
+      </motion.div>
 
       {showFilter && (
         <>
@@ -107,7 +111,7 @@ export default function Projects({ showFilter = true, limit }) {
               </div>
 
               {/* Description */}
-              <p className="text-sm md:text-base text-base-content/70 text-justify">
+              <p className="text-sm md:text-base text-base-content/70">
                 {project.description}
               </p>
 

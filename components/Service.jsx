@@ -25,12 +25,16 @@ export default function Service() {
             </span>
           </h2>
 
-          <p className="max-w-2xl mx-auto text-base md:text-lg text-base-content/60 leading-relaxed">
+          <p className="max-w-2xl mx-auto text-base md:text-lg text-base-content/60">
             Delivering modern web development, scalable applications,
             and creative digital solutions to bring your ideas to life.
           </p>
 
-          <div className="w-20 h-1 mx-auto rounded-full bg-linear-to-r from-primary to-secondary" />
+          <div className="flex items-center justify-center gap-2 pt-1">
+            <span className="w-10 h-1 rounded-full bg-primary"></span>
+            <span className="w-3 h-1 rounded-full bg-secondary"></span>
+            <span className="w-10 h-1 rounded-full bg-primary/30"></span>
+          </div>
         </motion.div>
       </div>
 
@@ -67,7 +71,7 @@ export default function Service() {
 
             {/* Title */}
             <h3
-              className="text-xl font-bold mb-3
+              className="text-2xl font-bold mb-3
                 transition-colors duration-500
                 group-hover:text-white"
             >
@@ -76,8 +80,7 @@ export default function Service() {
 
             {/* Description */}
             <p
-              className="text-base-content/60 text-sm
-                leading-7 mb-6
+              className="text-base-content/60 text-sm md:text-base mb-6
                 transition-colors duration-500
                 group-hover:text-white/80"
             >
