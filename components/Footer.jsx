@@ -7,7 +7,7 @@ export default function Footer() {
 
       <div className="fixed  md:bottom-8 bottom-25 right-6 z-50">
         <a
-          href="#contact"
+          href="https://wa.me/8801580359517?text=Hi, I\'d like to know more about your services."
           className="group flex items-center gap-3 pl-5 pr-2 py-2 border border-primary rounded-full backdrop-blur-xs text-primary-content shadow-xl shadow-primary/30 hover:scale-105 transition-all duration-300"
         >
           <span className="font-semibold text-sm whitespace-nowrap">
