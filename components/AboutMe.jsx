@@ -21,7 +21,7 @@ export default function AboutMe() {
           Get to Know Me
         </span>
 
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">
           About{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-secondary">
             Me
