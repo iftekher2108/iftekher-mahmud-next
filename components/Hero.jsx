@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import IconSocial from "./iconSocial";
 import { TypeAnimation } from 'react-type-animation';
+import Particle from "./Particle";
 
 export default function Hero() {
     return (
@@ -11,8 +12,8 @@ export default function Hero() {
                 <div className="absolute -top-16 -left-16 w-80 h-80 bg-primary/10 rounded-full blur-2xl"></div>
                 <div className="absolute bottom-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-2xl"></div>
             </div>
-            <div className="relative grid lg:grid-cols-5 gap-10 items-center z-10">
-                <div className="col-span-3 p-3 mb-2">
+            <div className="relative grid lg:grid-cols-5 gap-10 items-center">
+                <div className="col-span-3 p-3 mb-2 z-10">
                     <h1 className="text-5xl font-extrabold text-base-content leading-tight">
                         Hi I&#39;m <br />
                         <span className="text-primary tracking-[2px]">Iftekher </span><span className="text-stroke tracking-[2px] text-transparent">Mahmud</span>
@@ -62,9 +63,12 @@ export default function Hero() {
                     </div>
                     <IconSocial />
                 </div>
+
+                <Particle />
+
                 <div className="col-span-2 " >
                     <div className="avatar hero-picture flex items-end pt-3 px-3 justify-center">
-                        <Image src={'/hero.png'} height={500} width={400} alt="hero-avater" className="object-cover drop-shadow-lg drop-shadow-primary" />
+                        <Image src={'/hero.png'} height={500} width={400} loading="eager" alt="hero-avater" className="object-cover drop-shadow-lg drop-shadow-primary" />
                     </div>
                 </div>
             </div>
