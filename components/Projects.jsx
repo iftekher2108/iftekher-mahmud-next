@@ -17,7 +17,7 @@ export default function Projects({ showFilter = true, limit }) {
   }
 
   return (
-    <div id="projects" className="card md:p-6 p-2 mb-2 bg-base-100 shadow-xl overflow-x-hidden">
+    <div id="projects" className="card md:p-6 p-2 mb-2 bg-base-100 shadow-xl overflow-hidden">
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}

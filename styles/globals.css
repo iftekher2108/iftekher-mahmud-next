@@ -98,16 +98,18 @@
 
 
 .hero .hero-picture {
-  @apply relative w-full h-full bg-cover bg-center;
+  @apply relative w-full h-full;
 }
+
+
 .avatar.hero-picture::after {
-  @apply absolute top-[-75%] right-[-40%] w-[80%] rounded-full h-full z-10 bg-[#2A7EFF]/20;
+  @apply absolute top-[-75%] right-[-40%] w-[80%] rounded-full h-full z-10 bg-primary/20;
   content: "";
   animation: fadeIn 2s ease-in-out infinite alternate;
 }
 
 .avatar.hero-picture::before {
-  @apply absolute bottom-[-75%] left-[-40%] w-[80%] rounded-full h-full z-10 bg-[#CC0C41]/20;
+  @apply absolute bottom-[-75%] left-[-40%] w-[80%] rounded-full h-full z-10 bg-error/20;
   content: "";
   animation: fadeIn 2s ease-in-out infinite alternate;
   animation-delay: 0.5s;

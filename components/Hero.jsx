@@ -8,12 +8,13 @@ import Particle from "./Particle";
 export default function Hero() {
     return (
         <div className="hero-section relative md:pt-6 md:px-6 pt-2 card rounded-5 shadow-md border-base-200 overflow-hidden">
+              <Particle />
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute -top-16 -left-16 w-80 h-80 bg-primary/10 rounded-full blur-2xl"></div>
                 <div className="absolute bottom-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-2xl"></div>
             </div>
-            <div className="relative grid lg:grid-cols-5 gap-10 items-center">
-                <div className="col-span-3 p-3 mb-2 z-10">
+            <div className="relative lg:grid grid-cols-5 gap-10 items-end justify-center">
+                <div className="col-span-3 p-4 mb-2 z-10 self-center">
                     <h1 className="text-5xl font-extrabold text-base-content leading-tight">
                         Hi I&#39;m <br />
                         <span className="text-primary tracking-[2px]">Iftekher </span><span className="text-stroke tracking-[2px] text-transparent">Mahmud</span>
@@ -64,11 +65,9 @@ export default function Hero() {
                     <IconSocial />
                 </div>
 
-                <Particle />
-
-                <div className="col-span-2 " >
-                    <div className="avatar hero-picture flex items-end pt-3 px-3 justify-center">
-                        <Image src={'/hero.png'} height={500} width={400} loading="eager" alt="hero-avater" className="object-cover drop-shadow-lg drop-shadow-primary" />
+                <div className="col-span-2" >
+                    <div className="avatar hero-picture pt-3 px-3">
+                        <Image src={'/hero.png'} height={600} width={400} loading="eager" alt="hero-avater" className="object-cover drop-shadow-lg drop-shadow-primary" />
                     </div>
                 </div>
             </div>
